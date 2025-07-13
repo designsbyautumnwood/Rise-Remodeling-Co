@@ -1,0 +1,100 @@
+export default function Services() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const services = [
+    {
+      title: "Kitchen Remodeling",
+      description: "Transform your kitchen into the heart of your home with custom cabinetry, countertops, and modern appliances.",
+      image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+      alt: "Modern kitchen renovation with marble countertops",
+      features: ["Custom cabinetry design", "Countertop installation", "Appliance integration", "Lighting & electrical work"]
+    },
+    {
+      title: "Bathroom Renovation",
+      description: "Create a spa-like retreat with modern fixtures, beautiful tile work, and thoughtful design.",
+      image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+      alt: "Luxury bathroom renovation with walk-in shower",
+      features: ["Walk-in shower installation", "Vanity & storage solutions", "Tile & flooring", "Plumbing & fixtures"]
+    },
+    {
+      title: "Doors & Windows",
+      description: "Enhance your home's curb appeal and energy efficiency with quality door and window installations.",
+      image: "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+      alt: "Modern front door installation with glass panels",
+      features: ["Entry door replacement", "Window installation", "Weather sealing", "Hardware upgrades"]
+    },
+    {
+      title: "Trim & Millwork",
+      description: "Add character and elegance to your home with custom trim work and millwork installations.",
+      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+      alt: "Custom trim work and crown molding installation",
+      features: ["Crown molding installation", "Baseboards & casings", "Wainscoting & paneling", "Built-in shelving"]
+    },
+    {
+      title: "Flooring Solutions",
+      description: "From hardwood to tile, we install beautiful flooring that stands the test of time.",
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+      alt: "Hardwood flooring installation in modern living room",
+      features: ["Hardwood installation", "Tile & stone work", "Vinyl & laminate", "Subfloor preparation"]
+    },
+    {
+      title: "Custom Projects",
+      description: "Have a unique vision? We love bringing custom ideas to life with expert craftsmanship.",
+      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+      alt: "Custom built-in shelving and storage solutions",
+      features: ["Built-in storage", "Custom shelving", "Unique installations", "Creative solutions"]
+    }
+  ];
+
+  return (
+    <section id="services" className="section-padding bg-white">
+      <div className="container-padding">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Specialty Services</h2>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            We specialize in the most impactful home renovations that add value and beauty to your space. 
+            Each project is crafted with attention to detail and quality materials.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {services.map((service, index) => (
+            <div key={index} className="bg-cream rounded-2xl p-8 card-hover">
+              <img 
+                src={service.image} 
+                alt={service.alt}
+                className="w-full h-48 object-cover rounded-xl mb-6"
+              />
+              <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
+              <p className="text-muted-foreground mb-4">{service.description}</p>
+              <ul className="text-sm text-muted-foreground space-y-2">
+                {service.features.map((feature, idx) => (
+                  <li key={idx}>• {feature}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center bg-secondary/10 rounded-2xl p-8">
+          <h3 className="text-2xl font-semibold mb-4">What Else Can We Help With?</h3>
+          <p className="text-lg text-muted-foreground mb-6">
+            Don't see your project listed? We're happy to discuss your renovation needs — big or small. 
+            From minor repairs to major renovations, we have the expertise to bring your vision to life.
+          </p>
+          <button 
+            onClick={() => scrollToSection("contact")}
+            className="bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors font-semibold"
+          >
+            Discuss Your Project
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}

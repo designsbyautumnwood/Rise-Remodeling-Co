@@ -1,0 +1,127 @@
+import { useState, useEffect } from "react";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { Menu, X, Phone } from "lucide-react";
+
+export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const isMobile = useIsMobile();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setIsMenuOpen(false);
+    }
+  };
+
+  return (
+    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+      isScrolled ? "bg-white/95 backdrop-blur-sm shadow-md" : "bg-white/95 backdrop-blur-sm"
+    }`}>
+      <nav className="container-padding py-4">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center space-x-3">
+            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-xl">R</span>
+            </div>
+            <div>
+              <h1 className="text-xl font-bold text-primary">Rise Remodeling Co.</h1>
+              <p className="text-sm text-muted-foreground hidden sm:block">Born to Belong, Built to Last</p>
+            </div>
+          </div>
+
+          {/* Desktop Navigation */}
+          {!isMobile && (
+            <div className="flex items-center space-x-8">
+              <button onClick={() => scrollToSection("services")} className="hover:text-secondary transition-colors">
+                Services
+              </button>
+              <button onClick={() => scrollToSection("about")} className="hover:text-secondary transition-colors">
+                About
+              </button>
+              <button onClick={() => scrollToSection("portfolio")} className="hover:text-secondary transition-colors">
+                Portfolio
+              </button>
+              <button onClick={() => scrollToSection("testimonials")} className="hover:text-secondary transition-colors">
+                Reviews
+              </button>
+              <button onClick={() => scrollToSection("faq")} className="hover:text-secondary transition-colors">
+                FAQ
+              </button>
+              <button onClick={() => scrollToSection("contact")} className="hover:text-secondary transition-colors">
+                Contact
+              </button>
+            </div>
+          )}
+
+          {/* CTA Button */}
+          {!isMobile && (
+            <div className="flex items-center space-x-4">
+              <a href="tel:+18035550123" className="text-primary hover:text-secondary transition-colors flex items-center">
+                <Phone className="w-4 h-4 mr-2" />
+                (803) 555-0123
+              </a>
+              <button onClick={() => scrollToSection("contact")} className="btn-primary">
+                Get Free Estimate
+              </button>
+            </div>
+          )}
+
+          {/* Mobile Menu Button */}
+          {isMobile && (
+            <button 
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="p-2"
+            >
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          )}
+        </div>
+
+        {/* Mobile Menu */}
+        {isMobile && (
+          <div className={`${isMenuOpen ? "block" : "hidden"} pt-4 pb-3 space-y-1`}>
+            <button onClick={() => scrollToSection("services")} className="block w-full text-left px-3 py-2 hover:text-secondary transition-colors">
+              Services
+            </button>
+            <button onClick={() => scrollToSection("about")} className="block w-full text-left px-3 py-2 hover:text-secondary transition-colors">
+              About
+            </button>
+            <button onClick={() => scrollToSection("portfolio")} className="block w-full text-left px-3 py-2 hover:text-secondary transition-colors">
+              Portfolio
+            </button>
+            <button onClick={() => scrollToSection("testimonials")} className="block w-full text-left px-3 py-2 hover:text-secondary transition-colors">
+              Reviews
+            </button>
+            <button onClick={() => scrollToSection("faq")} className="block w-full text-left px-3 py-2 hover:text-secondary transition-colors">
+              FAQ
+            </button>
+            <button onClick={() => scrollToSection("contact")} className="block w-full text-left px-3 py-2 hover:text-secondary transition-colors">
+              Contact
+            </button>
+            <div className="pt-4 border-t">
+              <a href="tel:+18035550123" className="flex items-center px-3 py-2 text-primary hover:text-secondary">
+                <Phone className="w-4 h-4 mr-2" />
+                (803) 555-0123
+              </a>
+              <button onClick={() => scrollToSection("contact")} className="btn-primary w-full mx-3 mt-2">
+                Get Free Estimate
+              </button>
+            </div>
+          </div>
+        )}
+      </nav>
+    </header>
+  );
+}
