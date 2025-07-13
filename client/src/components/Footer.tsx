@@ -120,8 +120,8 @@ export default function Footer() {
             <div className="space-y-2 text-sm opacity-80">
               <p>Rock Hill, SC & York County</p>
               <p>
-                <a href="tel:+18035550123" className="hover:text-secondary transition-colors">
-                  (803) 555-0123
+                <a href="tel:+18032038664" className="hover:text-secondary transition-colors">
+                  (803) 203-8664
                 </a>
               </p>
               <p>

@@ -68,9 +68,9 @@ export default function Header() {
           {/* CTA Button */}
           {!isMobile && (
             <div className="flex items-center space-x-4">
-              <a href="tel:+18035550123" className="text-primary hover:text-secondary transition-colors flex items-center">
+              <a href="tel:+18032038664" className="text-primary hover:text-secondary transition-colors flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
-                (803) 555-0123
+                (803) 203-8664
               </a>
               <button onClick={() => scrollToSection("contact")} className="btn-primary">
                 Get Free Estimate
@@ -111,9 +111,9 @@ export default function Header() {
               Contact
             </button>
             <div className="pt-4 border-t">
-              <a href="tel:+18035550123" className="flex items-center px-3 py-2 text-primary hover:text-secondary">
+              <a href="tel:+18032038664" className="flex items-center px-3 py-2 text-primary hover:text-secondary">
                 <Phone className="w-4 h-4 mr-2" />
-                (803) 555-0123
+                (803) 203-8664
               </a>
               <button onClick={() => scrollToSection("contact")} className="btn-primary w-full mx-3 mt-2">
                 Get Free Estimate

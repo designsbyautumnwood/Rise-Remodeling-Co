@@ -252,8 +252,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold">Phone</h4>
-                  <a href="tel:+18035550123" className="text-primary hover:text-secondary transition-colors">
-                    (803) 555-0123
+                  <a href="tel:+18032038664" className="text-primary hover:text-secondary transition-colors">
+                    (803) 203-8664
                   </a>
                 </div>
               </div>
@@ -298,8 +298,8 @@ export default function Contact() {
                 Need urgent repairs? We offer emergency services for water damage, 
                 structural issues, and other urgent situations.
               </p>
-              <a href="tel:+18035550123" className="text-primary hover:text-secondary transition-colors font-semibold">
-                Call (803) 555-0123
+              <a href="tel:+18032038664" className="text-primary hover:text-secondary transition-colors font-semibold">
+                Call (803) 203-8664
               </a>
             </div>
           </div>
