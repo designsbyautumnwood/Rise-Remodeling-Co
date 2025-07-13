@@ -1,0 +1,104 @@
+🚀 Replit Prompt: Lead-Generating, Mobile-Optimized Website for Rise Remodeling Co. (Rock Hill, SC)
+Build a highly mobile-responsive, SEO-optimized, conversion-focused one-page website for Rise Remodeling Co., a remodeling and renovation company based in Rock Hill, South Carolina, serving York County families and homeowners.
+
+🛠️ Company Overview:
+Business Name: Rise Remodeling Co.
+
+Slogan: "Born to Belong, Built to Last."
+
+Primary Services: Kitchens, bathrooms, doors, windows, and trim
+
+Note: These are featured services, but additional renovation and remodeling work is available upon request.
+
+Audience: Families, homeowners, and local residents in York County
+
+Tone: Traditional, trustworthy, and locally grounded
+
+Contact: Phone and Email
+
+✅ Must-Have Website Features:
+📈 SEO Optimization
+Use semantic HTML5 structure (<header>, <section>, <footer>)
+
+Add SEO meta tags:
+
+Title: “Rise Remodeling Co. | Rock Hill SC Home Renovations”
+
+Meta description: “Trusted Rock Hill remodeling contractor. Specializing in kitchens, baths, and more. Serving York County families with craftsmanship and care.”
+
+Incorporate local service keywords: “Rock Hill remodeling,” “York County renovation,” “South Carolina home improvements”
+
+All images must have descriptive alt tags
+
+Structured data: Include placeholders for sitemap.xml and robots.txt
+
+📱 Mobile-First Responsive Design
+Designed mobile-first using Flexbox or Grid
+
+Responsive images (max-width, object-fit) and fluid typography
+
+Touch-friendly buttons, links, and form fields
+
+Sticky header navigation for mobile scrolling
+
+💰 Conversion & Lead Generation Strategy
+Prominent CTA button in hero section: “Get a Free Estimate”
+
+Lead capture form: Full Name, Email, Phone, Project Description
+
+Clickable phone number and email
+
+Reinforce trust with:
+
+“Locally owned & operated in Rock Hill”
+
+“20+ years of combined experience”
+
+Placeholder for reviews/testimonials
+
+Place CTAs at top, mid-page, and bottom for easy conversion
+
+Emphasize broader capabilities with text like:
+
+“Don’t see your project listed? We’re happy to discuss your renovation needs — big or small.”
+
+📊 Marketing Strategy Enhancements
+Dedicated section titled: “What Else Can We Help With?” → invites inquiries beyond the listed services
+
+FAQ section for common objections (timeline, pricing, how it works)
+
+Why Choose Us? section with benefit-based bullets (Reliability, Craftsmanship, Creativity, Affordability, Speed)
+
+Pre-structured layout ideal for future Google Ads or Facebook campaign landers
+
+🎨 Style & UX
+Traditional, warm aesthetic using neutral tones (e.g., cream, slate, woodgrain)
+
+Typography: Merriweather or Open Sans for a modern-classic feel
+
+Light scroll animations and hover transitions
+
+Lightbox-style gallery or slider placeholder for project photos
+
+Include favicon and Apple Touch icon
+
+📦 Required Sections:
+Header with logo + sticky navigation
+
+Hero Section with slogan and CTA
+
+Services Section – list featured services with “And more…” line
+
+About Section – focus on trust, values, and workmanship
+
+What Else Can We Help With? – open-ended to invite other project types
+
+Why Choose Us? – differentiators
+
+Testimonials – placeholder or sample quotes
+
+FAQ Section
+
+Contact Section – lead form + clickable phone/email
+
+Footer – Rock Hill address, copyright, contact info, SEO keywords
