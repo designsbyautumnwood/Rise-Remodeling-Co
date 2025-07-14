@@ -16,14 +16,14 @@ export default function QuickStats() {
     },
     {
       icon: <Clock className="w-6 h-6 text-purple-400" />,
-      number: "Licensed",
-      label: "& Insured",
+      number: "5 Star",
+      label: "Customer Rating",
       color: "text-purple-400"
     },
     {
       icon: <MapPin className="w-6 h-6 text-orange-400" />,
-      number: "Rock Hill",
-      label: "York County Service",
+      number: "Licensed",
+      label: "& Insured",
       color: "text-orange-400"
     }
   ];
