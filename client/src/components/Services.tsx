@@ -64,19 +64,19 @@ export default function Services() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {services.map((service, index) => (
-            <div key={index} className="bg-cream rounded-2xl p-8 card-hover hover-lift hover-glow slide-in-up sparkle" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="overflow-hidden rounded-xl mb-6">
+            <div key={index} className="bg-cream rounded-2xl p-8 card-hover">
+              <div className="rounded-xl mb-6">
                 <img 
                   src={service.image} 
                   alt={service.alt}
-                  className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
+                  className="w-full h-48 object-cover rounded-xl"
                 />
               </div>
-              <h3 className="text-xl font-semibold mb-4 gradient-text">{service.title}</h3>
+              <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
               <p className="text-muted-foreground mb-4">{service.description}</p>
               <ul className="text-sm text-muted-foreground space-y-2">
                 {service.features.map((feature, idx) => (
-                  <li key={idx} className="hover:text-primary transition-colors">• {feature}</li>
+                  <li key={idx}>• {feature}</li>
                 ))}
               </ul>
             </div>
