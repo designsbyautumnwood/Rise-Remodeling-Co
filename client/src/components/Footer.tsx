@@ -1,6 +1,6 @@
 import { Facebook, Twitter, Linkedin } from "lucide-react";
-import HammerLogo from "./HammerLogo";
-import TextLogo from "./TextLogo";
+import TransparentHammerLogo from "./TransparentHammerLogo";
+import TransparentTextLogo from "./TransparentTextLogo";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -17,9 +17,9 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <HammerLogo className="w-10 h-10" />
+              <TransparentHammerLogo className="w-10 h-10 text-white" />
               <div>
-                <TextLogo className="h-8" />
+                <TransparentTextLogo className="h-8 text-white" />
                 <p className="text-sm opacity-80">Born to Belong, Built to Last</p>
               </div>
             </div>
