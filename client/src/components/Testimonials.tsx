@@ -3,19 +3,19 @@ import { Star } from "lucide-react";
 export default function Testimonials() {
   const testimonials = [
     {
-      text: "Rise Remodeling Co. transformed our outdated kitchen into a modern masterpiece. Their attention to detail and professionalism exceeded our expectations. The team was punctual, clean, and respectful of our home.",
+      text: "Wow, what a difference! Our kitchen went from 1990s disaster to something you'd see in a magazine. The guys were great - showed up on time, cleaned up after themselves, and actually listened to what we wanted. My wife is obsessed with the new island!",
       author: "Sarah & Mike Thompson",
       location: "Rock Hill, SC",
       initials: "SM"
     },
     {
-      text: "We couldn't be happier with our bathroom renovation! The team worked within our budget and timeline, delivering exceptional results. The quality of workmanship is outstanding, and we've received so many compliments.",
+      text: "I was worried about the mess and noise, but these guys made it so much easier than I thought. They finished our bathroom in 2 weeks like they promised, and honestly? It looks amazing. My teenage daughter actually said 'Mom, this is actually cool' - that's a win!",
       author: "Jennifer Rodriguez",
       location: "York County, SC",
       initials: "JR"
     },
     {
-      text: "From start to finish, Rise Remodeling Co. made our home renovation stress-free. Their communication was excellent, and they went above and beyond to ensure we were happy with every detail. Highly recommended!",
+      text: "Rise Remodeling turned our cramped master bath into a spa-like retreat. The walk-in shower is incredible, and they even figured out how to add storage we didn't think was possible. Worth every penny and then some.",
       author: "David & Lisa Johnson",
       location: "Rock Hill, SC",
       initials: "DJ"
