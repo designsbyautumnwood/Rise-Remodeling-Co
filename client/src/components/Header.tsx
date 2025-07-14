@@ -37,7 +37,7 @@ export default function Header() {
             <TransparentHammerLogo className="w-10 h-10 text-primary float-animation" />
             <div>
               <TransparentTextLogo className="h-8 text-primary hover-glow" />
-              <p className="text-sm text-muted-foreground hidden sm:block">Born to Belong, Built to Last</p>
+              <p className="text-sm text-muted-foreground hidden sm:block">"Born to Belong, Built to Last"</p>
             </div>
           </div>
 
