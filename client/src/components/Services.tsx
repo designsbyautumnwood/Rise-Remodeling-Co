@@ -12,14 +12,18 @@ export default function Services() {
       description: "Transform your kitchen into the heart of your home with custom cabinetry, countertops, and modern appliances.",
       image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
       alt: "Modern kitchen renovation with marble countertops",
-      features: ["Custom cabinetry design", "Countertop installation", "Appliance integration", "Lighting & electrical work"]
+      features: ["Custom cabinetry design", "Countertop installation", "Appliance integration", "Lighting & electrical work"],
+      badge: "Most Popular",
+      badgeColor: "bg-gradient-to-r from-green-600/20 to-green-400/20 text-green-300"
     },
     {
       title: "Bathroom Renovation",
       description: "Create a spa-like retreat with modern fixtures, beautiful tile work, and thoughtful design.",
       image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
       alt: "Luxury bathroom renovation with walk-in shower",
-      features: ["Walk-in shower installation", "Vanity & storage solutions", "Tile & flooring", "Plumbing & fixtures"]
+      features: ["Walk-in shower installation", "Vanity & storage solutions", "Tile & flooring", "Plumbing & fixtures"],
+      badge: "Premium",
+      badgeColor: "bg-gradient-to-r from-purple-600/20 to-purple-400/20 text-purple-300"
     },
     {
       title: "Doors & Windows",
@@ -47,7 +51,9 @@ export default function Services() {
       description: "Have a unique vision? We love bringing custom ideas to life with expert craftsmanship.",
       image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
       alt: "Custom built-in shelving and storage solutions",
-      features: ["Built-in storage", "Custom shelving", "Unique installations", "Creative solutions"]
+      features: ["Built-in storage", "Custom shelving", "Unique installations", "Creative solutions"],
+      badge: "Expert Craftsmanship",
+      badgeColor: "bg-gradient-to-r from-blue-600/20 to-blue-400/20 text-blue-300"
     }
   ];
 
@@ -64,7 +70,12 @@ export default function Services() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {services.map((service, index) => (
-            <div key={index} className="modern-card p-8 stagger-animation">
+            <div key={index} className="modern-card p-8 stagger-animation relative">
+              {service.badge && (
+                <div className={`absolute -top-2 -right-2 px-3 py-1 rounded-full text-xs font-medium ${service.badgeColor} border border-white/20 backdrop-blur-sm z-10`}>
+                  {service.badge}
+                </div>
+              )}
               <div className="rounded-xl mb-6 overflow-hidden">
                 <img 
                   src={service.image} 

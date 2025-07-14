@@ -28,6 +28,11 @@ export default function Hero() {
       </div>
       
       <div className="container-padding relative z-20 text-center text-white">
+        <div className="mb-4 fade-in-up">
+          <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600/20 to-blue-400/20 rounded-full border border-blue-400/30 backdrop-blur-sm">
+            <span className="text-sm font-medium text-blue-300">🏠 Professional Contractor in Rock Hill</span>
+          </div>
+        </div>
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight fade-in-up">
           Transform Your Home<br />
           <span className="modern-text-gradient">With Expert Craftsmanship</span>
@@ -35,10 +40,25 @@ export default function Hero() {
         <p className="text-xl md:text-2xl mb-4 max-w-2xl mx-auto fade-in-up" style={{ animationDelay: '0.2s' }}>
           Born to Belong, Built to Last.
         </p>
-        <p className="modern-subtitle mb-8 max-w-3xl mx-auto opacity-90 fade-in-up" style={{ animationDelay: '0.4s' }}>
+        <p className="modern-subtitle mb-6 max-w-3xl mx-auto opacity-90 fade-in-up" style={{ animationDelay: '0.4s' }}>
           Trusted Rock Hill remodeling contractor specializing in kitchens, bathrooms, doors, windows, and trim. 
           Serving York County families with 20+ years of combined experience.
         </p>
+        
+        <div className="flex flex-wrap justify-center items-center gap-6 mb-8 fade-in-up" style={{ animationDelay: '0.5s' }}>
+          <div className="flex items-center text-sm text-blue-300">
+            <span className="mr-2">🛡️</span>
+            <span>Licensed & Insured</span>
+          </div>
+          <div className="flex items-center text-sm text-blue-300">
+            <span className="mr-2">🏠</span>
+            <span>Local Rock Hill Contractor</span>
+          </div>
+          <div className="flex items-center text-sm text-blue-300">
+            <span className="mr-2">⚡</span>
+            <span>Free Estimates</span>
+          </div>
+        </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 fade-in-up" style={{ animationDelay: '0.6s' }}>
           <button 
