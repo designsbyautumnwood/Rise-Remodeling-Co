@@ -69,7 +69,7 @@ export default function Hero() {
           </button>
           <button 
             onClick={() => scrollToSection("portfolio")}
-            className="modern-card w-full sm:w-auto px-8 py-4 text-lg font-semibold text-white modern-hover-lift border-2 border-white/20 hover:border-white/40"
+            className="bg-white/10 backdrop-blur-sm w-full sm:w-auto px-8 py-4 text-lg font-semibold text-white modern-hover-lift border-2 border-white/30 hover:border-white/50 hover:bg-white/20 transition-all duration-300"
           >
             View Our Work
           </button>
