@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Linkedin } from "lucide-react";
+import HammerLogo from "./HammerLogo";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -15,9 +16,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">R</span>
-              </div>
+              <HammerLogo className="w-10 h-10 text-white" />
               <div>
                 <h3 className="text-xl font-bold">Rise Remodeling Co.</h3>
                 <p className="text-sm opacity-80">Born to Belong, Built to Last</p>
