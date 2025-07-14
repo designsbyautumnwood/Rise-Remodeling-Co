@@ -4,20 +4,20 @@ export default function QuickStats() {
   const stats = [
     {
       icon: <TrendingUp className="w-6 h-6 text-green-400" />,
-      number: "20+",
-      label: "Years Experience",
+      number: "300+",
+      label: "Projects Completed",
       color: "text-green-400"
     },
     {
       icon: <Users className="w-6 h-6 text-blue-400" />,
-      number: "100%",
-      label: "Licensed & Insured",
+      number: "20+",
+      label: "Years Experience",
       color: "text-blue-400"
     },
     {
       icon: <Clock className="w-6 h-6 text-purple-400" />,
-      number: "Free",
-      label: "Estimates",
+      number: "Licensed",
+      label: "& Insured",
       color: "text-purple-400"
     },
     {
