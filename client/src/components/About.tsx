@@ -3,9 +3,9 @@ import { CheckCircle } from "lucide-react";
 export default function About() {
   const stats = [
     { number: "20+", label: "Years Experience" },
-    { number: "500+", label: "Projects Completed" },
+    { number: "300+", label: "Projects Completed" },
     { number: "100%", label: "Local Ownership" },
-    { number: "4.9★", label: "Customer Rating" }
+    { number: "5★", label: "Customer Rating" }
   ];
 
   return (
