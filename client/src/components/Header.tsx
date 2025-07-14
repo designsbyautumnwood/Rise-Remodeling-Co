@@ -28,7 +28,7 @@ export default function Header() {
 
   return (
     <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-      isScrolled ? "bg-white/95 backdrop-blur-sm shadow-md" : "bg-white/95 backdrop-blur-sm"
+      isScrolled ? "sleek-card border-glow" : "sleek-card premium-gradient"
     }`}>
       <nav className="container-padding py-4">
         <div className="flex items-center justify-between">
@@ -44,22 +44,22 @@ export default function Header() {
           {/* Desktop Navigation */}
           {!isMobile && (
             <div className="flex items-center space-x-8">
-              <button onClick={() => scrollToSection("services")} className="hover:text-secondary transition-all duration-300 hover-lift hover-glow">
+              <button onClick={() => scrollToSection("services")} className="hover-neon transition-all duration-300 font-semibold">
                 Services
               </button>
-              <button onClick={() => scrollToSection("about")} className="hover:text-secondary transition-all duration-300 hover-lift hover-glow">
+              <button onClick={() => scrollToSection("about")} className="hover-neon transition-all duration-300 font-semibold">
                 About
               </button>
-              <button onClick={() => scrollToSection("portfolio")} className="hover:text-secondary transition-all duration-300 hover-lift hover-glow">
+              <button onClick={() => scrollToSection("portfolio")} className="hover-neon transition-all duration-300 font-semibold">
                 Portfolio
               </button>
-              <button onClick={() => scrollToSection("testimonials")} className="hover:text-secondary transition-all duration-300 hover-lift hover-glow">
+              <button onClick={() => scrollToSection("testimonials")} className="hover-neon transition-all duration-300 font-semibold">
                 Reviews
               </button>
-              <button onClick={() => scrollToSection("faq")} className="hover:text-secondary transition-all duration-300 hover-lift hover-glow">
+              <button onClick={() => scrollToSection("faq")} className="hover-neon transition-all duration-300 font-semibold">
                 FAQ
               </button>
-              <button onClick={() => scrollToSection("contact")} className="hover:text-secondary transition-all duration-300 hover-lift hover-glow">
+              <button onClick={() => scrollToSection("contact")} className="hover-neon transition-all duration-300 font-semibold">
                 Contact
               </button>
             </div>
@@ -72,7 +72,7 @@ export default function Header() {
                 <Phone className="w-4 h-4 mr-2" />
                 (803) 203-8664
               </a>
-              <button onClick={() => scrollToSection("contact")} className="btn-primary hover-lift hover-glow pulse-glow">
+              <button onClick={() => scrollToSection("contact")} className="button-snazzy">
                 Get Free Estimate
               </button>
             </div>

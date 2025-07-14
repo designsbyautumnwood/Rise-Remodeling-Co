@@ -156,6 +156,137 @@
 .stagger-5 { animation-delay: 0.5s; }
 .stagger-6 { animation-delay: 0.6s; }
 
+/* Snazzy effects */
+.neon-glow {
+  text-shadow: 0 0 10px rgba(212, 165, 116, 0.5),
+               0 0 20px rgba(212, 165, 116, 0.3),
+               0 0 30px rgba(212, 165, 116, 0.2);
+}
+
+.hover-neon:hover {
+  text-shadow: 0 0 10px rgba(212, 165, 116, 0.8),
+               0 0 20px rgba(212, 165, 116, 0.6),
+               0 0 30px rgba(212, 165, 116, 0.4);
+}
+
+.border-glow {
+  border: 2px solid transparent;
+  background: linear-gradient(45deg, rgba(212, 165, 116, 0.3), rgba(139, 69, 19, 0.3));
+  background-clip: padding-box;
+  box-shadow: 0 0 20px rgba(212, 165, 116, 0.3);
+}
+
+.sleek-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(212, 165, 116, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.sleek-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15),
+              0 0 40px rgba(212, 165, 116, 0.2);
+}
+
+.premium-gradient {
+  background: linear-gradient(135deg, 
+    rgba(212, 165, 116, 0.1) 0%, 
+    rgba(139, 69, 19, 0.1) 50%, 
+    rgba(212, 165, 116, 0.1) 100%);
+}
+
+.text-shine {
+  background: linear-gradient(45deg, #d4a574, #8b4513, #d4a574);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shine 3s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.button-snazzy {
+  background: linear-gradient(45deg, #d4a574, #8b4513);
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button-snazzy::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.button-snazzy:hover::before {
+  left: 100%;
+}
+
+.button-snazzy:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.typing-animation {
+  overflow: hidden;
+  border-right: 3px solid rgba(212, 165, 116, 0.8);
+  white-space: nowrap;
+  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: rgba(212, 165, 116, 0.8); }
+}
+
+.morphing-shape {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
+  transition: clip-path 0.4s ease;
+}
+
+.morphing-shape:hover {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%);
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.luxury-border {
+  border: 3px solid;
+  border-image: linear-gradient(45deg, #d4a574, #8b4513, #d4a574) 1;
+  border-radius: 15px;
+}
+
 :root {
   --background: hsl(46, 40%, 97%);
   --foreground: hsl(208, 25%, 18%);

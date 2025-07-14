@@ -55,7 +55,7 @@ export default function Services() {
     <section id="services" className="section-padding animated-bg">
       <div className="container-padding">
         <div className="text-center mb-16 slide-in-up">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">Our Specialty Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-shine neon-glow">Our Specialty Services</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             We specialize in the most impactful home renovations that add value and beauty to your space. 
             Each project is crafted with attention to detail and quality materials.
@@ -64,7 +64,7 @@ export default function Services() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {services.map((service, index) => (
-            <div key={index} className="bg-cream rounded-2xl p-8 card-hover">
+            <div key={index} className="sleek-card p-8 morphing-shape luxury-border">
               <div className="rounded-xl mb-6">
                 <img 
                   src={service.image} 
@@ -72,7 +72,7 @@ export default function Services() {
                   className="w-full h-48 object-cover rounded-xl"
                 />
               </div>
-              <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
+              <h3 className="text-xl font-semibold mb-4 hover-neon">{service.title}</h3>
               <p className="text-muted-foreground mb-4">{service.description}</p>
               <ul className="text-sm text-muted-foreground space-y-2">
                 {service.features.map((feature, idx) => (

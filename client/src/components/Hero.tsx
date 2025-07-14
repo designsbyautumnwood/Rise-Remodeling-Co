@@ -30,7 +30,7 @@ export default function Hero() {
       <div className="container-padding relative z-20 text-center text-white">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight slide-in-up">
           Transform Your Home<br />
-          <span className="gradient-text text-secondary">With Expert Craftsmanship</span>
+          <span className="text-shine neon-glow">With Expert Craftsmanship</span>
         </h1>
         <p className="text-xl md:text-2xl mb-4 max-w-2xl mx-auto">
           Born to Belong, Built to Last.
@@ -43,13 +43,13 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 slide-in-up" style={{ animationDelay: '0.3s' }}>
           <button 
             onClick={() => scrollToSection("contact")}
-            className="bg-success text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-success/90 transition-all duration-300 transform hover:scale-105 hover-glow pulse-glow w-full sm:w-auto"
+            className="button-snazzy w-full sm:w-auto text-lg"
           >
             Get Your Free Estimate
           </button>
           <button 
             onClick={() => scrollToSection("portfolio")}
-            className="btn-outline w-full sm:w-auto px-8 py-4 text-lg hover-lift glass-morph"
+            className="sleek-card border-glow w-full sm:w-auto px-8 py-4 text-lg font-semibold text-white hover-neon"
           >
             View Our Work
           </button>

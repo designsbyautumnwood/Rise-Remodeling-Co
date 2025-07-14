@@ -62,7 +62,7 @@ export default function Contact() {
     <section id="contact" className="section-padding bg-white">
       <div className="container-padding">
         <div className="text-center mb-16 slide-in-up">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">Ready to Transform Your Home?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-shine neon-glow">Ready to Transform Your Home?</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Get started with your free consultation today. We'll discuss your vision, assess your space, 
             and provide a detailed estimate for your project.
@@ -71,8 +71,8 @@ export default function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Form */}
-          <div className="bg-cream rounded-2xl p-8 slide-in-left hover-lift hover-glow">
-            <h3 className="text-2xl font-semibold mb-6 gradient-text">Get Your Free Estimate</h3>
+          <div className="sleek-card p-8 slide-in-left border-glow luxury-border">
+            <h3 className="text-2xl font-semibold mb-6 text-shine hover-neon">Get Your Free Estimate</h3>
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -227,13 +227,13 @@ export default function Contact() {
                   )}
                 />
 
-                <Button 
+                <button 
                   type="submit" 
-                  className="w-full bg-success text-success-foreground hover:bg-success/90 py-4 text-lg hover-lift hover-glow pulse-glow"
+                  className="button-snazzy w-full text-lg py-4"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Get My Free Estimate"}
-                </Button>
+                </button>
 
                 <p className="text-sm text-muted-foreground text-center">
                   * Required fields. We'll contact you within 24 hours to schedule your consultation.
