@@ -173,7 +173,7 @@
 }
 
 .modern-button {
-  background: linear-gradient(135deg, #d4a574 0%, #8b4513 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
   border: none;
   color: white;
   padding: 14px 32px;
@@ -228,7 +228,7 @@
 }
 
 .modern-accent {
-  color: #d4a574;
+  color: #3b82f6;
   font-weight: 600;
 }
 
@@ -246,7 +246,7 @@
 }
 
 .modern-nav-item:hover {
-  color: #d4a574;
+  color: #3b82f6;
 }
 
 .modern-nav-item::after {
@@ -256,7 +256,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: #d4a574;
+  background: #3b82f6;
   transition: width 0.3s ease;
 }
 
@@ -384,7 +384,7 @@
   }
   
   .btn-secondary {
-    @apply bg-secondary text-secondary-foreground hover:bg-amber-600 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105;
+    @apply bg-secondary text-secondary-foreground hover:bg-blue-600 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105;
   }
   
   .btn-outline {
