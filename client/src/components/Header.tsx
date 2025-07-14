@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Menu, X, Phone } from "lucide-react";
 import HammerLogo from "./HammerLogo";
+import TextLogo from "./TextLogo";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,9 +34,9 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <HammerLogo className="w-10 h-10 text-primary" />
+            <HammerLogo className="w-10 h-10" />
             <div>
-              <h1 className="text-xl font-bold text-primary">Rise Remodeling Co.</h1>
+              <TextLogo className="h-8" />
               <p className="text-sm text-muted-foreground hidden sm:block">Born to Belong, Built to Last</p>
             </div>
           </div>
