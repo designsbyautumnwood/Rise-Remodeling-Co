@@ -52,11 +52,11 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="section-padding animated-bg">
+    <section id="services" className="section-padding modern-section">
       <div className="container-padding">
-        <div className="text-center mb-16 slide-in-up">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-shine neon-glow">Our Specialty Services</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+        <div className="text-center mb-16 fade-in-up">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 modern-text-gradient">Our Specialty Services</h2>
+          <p className="modern-subtitle max-w-3xl mx-auto">
             We specialize in the most impactful home renovations that add value and beauty to your space. 
             Each project is crafted with attention to detail and quality materials.
           </p>
@@ -64,19 +64,22 @@ export default function Services() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {services.map((service, index) => (
-            <div key={index} className="sleek-card p-8 morphing-shape luxury-border">
-              <div className="rounded-xl mb-6">
+            <div key={index} className="modern-card p-8 stagger-animation">
+              <div className="rounded-xl mb-6 overflow-hidden">
                 <img 
                   src={service.image} 
                   alt={service.alt}
-                  className="w-full h-48 object-cover rounded-xl"
+                  className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
-              <h3 className="text-xl font-semibold mb-4 hover-neon">{service.title}</h3>
-              <p className="text-muted-foreground mb-4">{service.description}</p>
-              <ul className="text-sm text-muted-foreground space-y-2">
+              <h3 className="text-xl font-semibold mb-4 modern-accent">{service.title}</h3>
+              <p className="modern-subtitle mb-4 text-sm">{service.description}</p>
+              <ul className="text-sm text-gray-600 space-y-2">
                 {service.features.map((feature, idx) => (
-                  <li key={idx}>• {feature}</li>
+                  <li key={idx} className="flex items-center">
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                    {feature}
+                  </li>
                 ))}
               </ul>
             </div>

@@ -61,9 +61,9 @@ export default function Contact() {
   return (
     <section id="contact" className="section-padding bg-white">
       <div className="container-padding">
-        <div className="text-center mb-16 slide-in-up">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-shine neon-glow">Ready to Transform Your Home?</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+        <div className="text-center mb-16 fade-in-up">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 modern-text-gradient">Ready to Transform Your Home?</h2>
+          <p className="modern-subtitle max-w-3xl mx-auto">
             Get started with your free consultation today. We'll discuss your vision, assess your space, 
             and provide a detailed estimate for your project.
           </p>
@@ -71,8 +71,8 @@ export default function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Form */}
-          <div className="sleek-card p-8 slide-in-left border-glow luxury-border">
-            <h3 className="text-2xl font-semibold mb-6 text-shine hover-neon">Get Your Free Estimate</h3>
+          <div className="modern-card p-8 fade-in-up">
+            <h3 className="text-2xl font-semibold mb-6 modern-accent">Get Your Free Estimate</h3>
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -229,7 +229,7 @@ export default function Contact() {
 
                 <button 
                   type="submit" 
-                  className="button-snazzy w-full text-lg py-4"
+                  className="modern-button w-full text-lg py-4"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Get My Free Estimate"}
@@ -243,35 +243,35 @@ export default function Contact() {
           </div>
 
           {/* Contact Information */}
-          <div className="slide-in-right">
-            <h3 className="text-2xl font-semibold mb-6 gradient-text">Get in Touch</h3>
+          <div className="fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <h3 className="text-2xl font-semibold mb-6 modern-accent">Get in Touch</h3>
             <div className="space-y-6">
-              <div className="flex items-center hover-lift hover-glow">
-                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4 float-animation">
+              <div className="flex items-center modern-hover-lift">
+                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4 modern-icon">
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h4 className="font-semibold">Phone</h4>
-                  <a href="tel:+18032038664" className="text-primary hover:text-secondary transition-all duration-300 hover-glow">
+                  <a href="tel:+18032038664" className="text-primary hover:text-secondary transition-all duration-300 modern-link">
                     (803) 203-8664
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+              <div className="flex items-center modern-hover-lift">
+                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4 modern-icon">
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h4 className="font-semibold">Email</h4>
-                  <a href="mailto:info@riseremodeling.com" className="text-primary hover:text-secondary transition-colors">
+                  <a href="mailto:info@riseremodeling.com" className="text-primary hover:text-secondary transition-colors modern-link">
                     info@riseremodeling.com
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+              <div className="flex items-center modern-hover-lift">
+                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4 modern-icon">
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -280,8 +280,8 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+              <div className="flex items-center modern-hover-lift">
+                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4 modern-icon">
                   <Clock className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -292,13 +292,13 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="mt-8 p-6 bg-secondary/10 rounded-xl">
-              <h4 className="font-semibold mb-3">Emergency Services</h4>
+            <div className="mt-8 p-6 modern-card">
+              <h4 className="font-semibold mb-3 modern-accent">Emergency Services</h4>
               <p className="text-sm text-muted-foreground mb-4">
                 Need urgent repairs? We offer emergency services for water damage, 
                 structural issues, and other urgent situations.
               </p>
-              <a href="tel:+18032038664" className="text-primary hover:text-secondary transition-colors font-semibold">
+              <a href="tel:+18032038664" className="text-primary hover:text-secondary transition-colors font-semibold modern-link">
                 Call (803) 203-8664
               </a>
             </div>

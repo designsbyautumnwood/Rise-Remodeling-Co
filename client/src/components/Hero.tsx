@@ -28,28 +28,28 @@ export default function Hero() {
       </div>
       
       <div className="container-padding relative z-20 text-center text-white">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight slide-in-up">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight fade-in-up">
           Transform Your Home<br />
-          <span className="text-shine neon-glow">With Expert Craftsmanship</span>
+          <span className="modern-text-gradient">With Expert Craftsmanship</span>
         </h1>
-        <p className="text-xl md:text-2xl mb-4 max-w-2xl mx-auto">
+        <p className="text-xl md:text-2xl mb-4 max-w-2xl mx-auto fade-in-up" style={{ animationDelay: '0.2s' }}>
           Born to Belong, Built to Last.
         </p>
-        <p className="text-lg mb-8 max-w-3xl mx-auto opacity-90">
+        <p className="modern-subtitle mb-8 max-w-3xl mx-auto opacity-90 fade-in-up" style={{ animationDelay: '0.4s' }}>
           Trusted Rock Hill remodeling contractor specializing in kitchens, bathrooms, doors, windows, and trim. 
           Serving York County families with 20+ years of combined experience.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 slide-in-up" style={{ animationDelay: '0.3s' }}>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 fade-in-up" style={{ animationDelay: '0.6s' }}>
           <button 
             onClick={() => scrollToSection("contact")}
-            className="button-snazzy w-full sm:w-auto text-lg"
+            className="modern-button w-full sm:w-auto text-lg"
           >
             Get Your Free Estimate
           </button>
           <button 
             onClick={() => scrollToSection("portfolio")}
-            className="sleek-card border-glow w-full sm:w-auto px-8 py-4 text-lg font-semibold text-white hover-neon"
+            className="modern-card w-full sm:w-auto px-8 py-4 text-lg font-semibold text-white modern-hover-lift"
           >
             View Our Work
           </button>

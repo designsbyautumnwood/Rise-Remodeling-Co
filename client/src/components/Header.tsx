@@ -28,7 +28,7 @@ export default function Header() {
 
   return (
     <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-      isScrolled ? "sleek-card border-glow" : "sleek-card premium-gradient"
+      isScrolled ? "modern-header modern-shadow" : "modern-header"
     }`}>
       <nav className="container-padding py-4">
         <div className="flex items-center justify-between">
@@ -44,22 +44,22 @@ export default function Header() {
           {/* Desktop Navigation */}
           {!isMobile && (
             <div className="flex items-center space-x-8">
-              <button onClick={() => scrollToSection("services")} className="hover-neon transition-all duration-300 font-semibold">
+              <button onClick={() => scrollToSection("services")} className="modern-nav-item">
                 Services
               </button>
-              <button onClick={() => scrollToSection("about")} className="hover-neon transition-all duration-300 font-semibold">
+              <button onClick={() => scrollToSection("about")} className="modern-nav-item">
                 About
               </button>
-              <button onClick={() => scrollToSection("portfolio")} className="hover-neon transition-all duration-300 font-semibold">
+              <button onClick={() => scrollToSection("portfolio")} className="modern-nav-item">
                 Portfolio
               </button>
-              <button onClick={() => scrollToSection("testimonials")} className="hover-neon transition-all duration-300 font-semibold">
+              <button onClick={() => scrollToSection("testimonials")} className="modern-nav-item">
                 Reviews
               </button>
-              <button onClick={() => scrollToSection("faq")} className="hover-neon transition-all duration-300 font-semibold">
+              <button onClick={() => scrollToSection("faq")} className="modern-nav-item">
                 FAQ
               </button>
-              <button onClick={() => scrollToSection("contact")} className="hover-neon transition-all duration-300 font-semibold">
+              <button onClick={() => scrollToSection("contact")} className="modern-nav-item">
                 Contact
               </button>
             </div>
@@ -72,7 +72,7 @@ export default function Header() {
                 <Phone className="w-4 h-4 mr-2" />
                 (803) 203-8664
               </a>
-              <button onClick={() => scrollToSection("contact")} className="button-snazzy">
+              <button onClick={() => scrollToSection("contact")} className="modern-button">
                 Get Free Estimate
               </button>
             </div>
