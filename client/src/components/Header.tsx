@@ -33,10 +33,10 @@ export default function Header() {
       <nav className="container-padding py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <TransparentHammerLogo className="w-10 h-10 text-primary" />
+          <div className="flex items-center space-x-3 hover-scale">
+            <TransparentHammerLogo className="w-10 h-10 text-primary float-animation" />
             <div>
-              <TransparentTextLogo className="h-8 text-primary" />
+              <TransparentTextLogo className="h-8 text-primary hover-glow" />
               <p className="text-sm text-muted-foreground hidden sm:block">Born to Belong, Built to Last</p>
             </div>
           </div>
@@ -44,22 +44,22 @@ export default function Header() {
           {/* Desktop Navigation */}
           {!isMobile && (
             <div className="flex items-center space-x-8">
-              <button onClick={() => scrollToSection("services")} className="hover:text-secondary transition-colors">
+              <button onClick={() => scrollToSection("services")} className="hover:text-secondary transition-all duration-300 hover-lift hover-glow">
                 Services
               </button>
-              <button onClick={() => scrollToSection("about")} className="hover:text-secondary transition-colors">
+              <button onClick={() => scrollToSection("about")} className="hover:text-secondary transition-all duration-300 hover-lift hover-glow">
                 About
               </button>
-              <button onClick={() => scrollToSection("portfolio")} className="hover:text-secondary transition-colors">
+              <button onClick={() => scrollToSection("portfolio")} className="hover:text-secondary transition-all duration-300 hover-lift hover-glow">
                 Portfolio
               </button>
-              <button onClick={() => scrollToSection("testimonials")} className="hover:text-secondary transition-colors">
+              <button onClick={() => scrollToSection("testimonials")} className="hover:text-secondary transition-all duration-300 hover-lift hover-glow">
                 Reviews
               </button>
-              <button onClick={() => scrollToSection("faq")} className="hover:text-secondary transition-colors">
+              <button onClick={() => scrollToSection("faq")} className="hover:text-secondary transition-all duration-300 hover-lift hover-glow">
                 FAQ
               </button>
-              <button onClick={() => scrollToSection("contact")} className="hover:text-secondary transition-colors">
+              <button onClick={() => scrollToSection("contact")} className="hover:text-secondary transition-all duration-300 hover-lift hover-glow">
                 Contact
               </button>
             </div>
@@ -72,7 +72,7 @@ export default function Header() {
                 <Phone className="w-4 h-4 mr-2" />
                 (803) 203-8664
               </a>
-              <button onClick={() => scrollToSection("contact")} className="btn-primary">
+              <button onClick={() => scrollToSection("contact")} className="btn-primary hover-lift hover-glow pulse-glow">
                 Get Free Estimate
               </button>
             </div>

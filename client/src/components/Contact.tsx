@@ -61,8 +61,8 @@ export default function Contact() {
   return (
     <section id="contact" className="section-padding bg-white">
       <div className="container-padding">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Home?</h2>
+        <div className="text-center mb-16 slide-in-up">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">Ready to Transform Your Home?</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Get started with your free consultation today. We'll discuss your vision, assess your space, 
             and provide a detailed estimate for your project.
@@ -71,8 +71,8 @@ export default function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Form */}
-          <div className="bg-cream rounded-2xl p-8">
-            <h3 className="text-2xl font-semibold mb-6">Get Your Free Estimate</h3>
+          <div className="bg-cream rounded-2xl p-8 slide-in-left hover-lift hover-glow">
+            <h3 className="text-2xl font-semibold mb-6 gradient-text">Get Your Free Estimate</h3>
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -229,7 +229,7 @@ export default function Contact() {
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-success text-success-foreground hover:bg-success/90 py-4 text-lg"
+                  className="w-full bg-success text-success-foreground hover:bg-success/90 py-4 text-lg hover-lift hover-glow pulse-glow"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Get My Free Estimate"}
@@ -243,16 +243,16 @@ export default function Contact() {
           </div>
 
           {/* Contact Information */}
-          <div>
-            <h3 className="text-2xl font-semibold mb-6">Get in Touch</h3>
+          <div className="slide-in-right">
+            <h3 className="text-2xl font-semibold mb-6 gradient-text">Get in Touch</h3>
             <div className="space-y-6">
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+              <div className="flex items-center hover-lift hover-glow">
+                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4 float-animation">
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h4 className="font-semibold">Phone</h4>
-                  <a href="tel:+18032038664" className="text-primary hover:text-secondary transition-colors">
+                  <a href="tel:+18032038664" className="text-primary hover:text-secondary transition-all duration-300 hover-glow">
                     (803) 203-8664
                   </a>
                 </div>
