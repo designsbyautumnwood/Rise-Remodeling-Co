@@ -70,7 +70,11 @@ export default function Services() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {services.map((service, index) => (
-            <div key={index} className="modern-card p-8 stagger-animation relative">
+            <div 
+              key={index} 
+              className="modern-card p-8 stagger-animation relative cursor-pointer hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              onClick={() => scrollToSection("contact")}
+            >
               {service.badge && (
                 <div className={`absolute -top-2 -right-2 px-3 py-1 rounded-full text-xs font-medium ${service.badgeColor} border border-white/20 backdrop-blur-sm z-10`}>
                   {service.badge}
@@ -93,6 +97,14 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
+              <div className="mt-4 text-center">
+                <div className="inline-flex items-center text-primary text-sm font-medium">
+                  Click to Get Quote
+                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
             </div>
           ))}
         </div>
