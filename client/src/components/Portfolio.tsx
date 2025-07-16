@@ -1,4 +1,5 @@
 import { MapPin } from "lucide-react";
+import { useState } from "react";
 import bathroomImage from "@assets/IMG_0274_1752702485321.png";
 import plumbingImage from "@assets/IMG_0276_1752702485321.png";
 import projectImage1 from "@assets/508439585593227258_1752704169241.jpeg";
@@ -6,6 +7,8 @@ import projectImage2 from "@assets/9202957212892310662_1752704169242.jpeg";
 import projectImage3 from "@assets/5113705536296508580_1752704207399.jpeg";
 
 export default function Portfolio() {
+  const [hoveredImage, setHoveredImage] = useState<string | null>(null);
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -63,12 +66,30 @@ export default function Portfolio() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <img 
-                src={project.image}
-                alt={project.alt}
-                className="w-full h-48 object-cover"
-              />
+            <div 
+              key={index} 
+              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 relative"
+              onMouseEnter={() => setHoveredImage(project.image)}
+              onMouseLeave={() => setHoveredImage(null)}
+            >
+              <div className="relative">
+                <img 
+                  src={project.image}
+                  alt={project.alt}
+                  className="w-full h-48 object-cover cursor-pointer"
+                />
+                {hoveredImage === project.image && (
+                  <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 pointer-events-none">
+                    <div className="max-w-4xl max-h-[90vh] p-4">
+                      <img 
+                        src={project.image}
+                        alt={project.alt}
+                        className="w-full h-full object-contain rounded-lg shadow-2xl"
+                      />
+                    </div>
+                  </div>
+                )}
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-muted-foreground mb-4">{project.description}</p>
