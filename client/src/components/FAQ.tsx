@@ -39,8 +39,8 @@ export default function FAQ() {
     <section id="faq" className="section-padding bg-cream">
       <div className="container-padding">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Frequently Asked Questions</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Get answers to common questions about our remodeling process, pricing, and timelines.
           </p>
         </div>
@@ -50,17 +50,17 @@ export default function FAQ() {
             <div key={index} className="bg-white rounded-lg shadow-sm mb-4 overflow-hidden">
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-4 text-left font-semibold text-lg flex items-center justify-between hover:bg-gray-50 transition-colors"
+                className="w-full px-6 py-4 text-left font-semibold text-lg flex items-center justify-between hover:bg-gray-50 transition-colors text-gray-900"
               >
                 <span>{faq.question}</span>
                 <ChevronDown 
-                  className={`w-5 h-5 transform transition-transform ${
+                  className={`w-5 h-5 transform transition-transform text-gray-600 ${
                     openIndex === index ? "rotate-180" : ""
                   }`}
                 />
               </button>
               {openIndex === index && (
-                <div className="px-6 pb-4 text-muted-foreground">
+                <div className="px-6 pb-4 text-gray-700">
                   <p>{faq.answer}</p>
                 </div>
               )}
