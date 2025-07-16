@@ -56,7 +56,7 @@ export default function Hero() {
           </div>
           <div className="flex items-center text-sm text-blue-300">
             <span className="mr-2">⚡</span>
-            <span>Free Estimates</span>
+            <span>Free Quotes</span>
           </div>
         </div>
         
@@ -65,7 +65,7 @@ export default function Hero() {
             onClick={() => scrollToSection("contact")}
             className="modern-button w-full sm:w-auto text-lg"
           >
-            Get Your Free Estimate
+            Get Your Free Quote
           </button>
           <button 
             onClick={() => scrollToSection("portfolio")}
@@ -84,7 +84,7 @@ export default function Hero() {
             </span>
             <span className="flex items-center">
               <CheckCircle className="w-4 h-4 mr-1" />
-              Free Estimates
+              Free Quotes
             </span>
             <span className="flex items-center">
               <CheckCircle className="w-4 h-4 mr-1" />
