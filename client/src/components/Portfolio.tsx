@@ -10,45 +10,17 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Modern Kitchen Transformation",
-      description: "Complete kitchen remodel with custom cabinetry, quartz countertops, and stainless steel appliances.",
-      image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-      alt: "Modern kitchen renovation in Rock Hill",
+      title: "Bathroom Renovation",
+      description: "Complete bathroom remodel with professional tile work and modern fixtures.",
+      image: "/attached_assets/IMG_0274_1752702485321.png",
+      alt: "Bathroom renovation with tile flooring in Rock Hill",
       location: "Rock Hill, SC"
     },
     {
-      title: "Spa-Like Master Bath",
-      description: "Luxurious bathroom renovation featuring a walk-in shower, dual vanities, and heated floors.",
-      image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-      alt: "Luxury master bathroom renovation",
-      location: "York County, SC"
-    },
-    {
-      title: "Custom Trim & Millwork",
-      description: "Elegant crown molding and custom trim work that adds character to this living space.",
-      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-      alt: "Custom trim work and crown molding installation",
-      location: "Rock Hill, SC"
-    },
-    {
-      title: "Front Door Transformation",
-      description: "Complete entryway makeover with a new front door, sidelights, and updated hardware.",
-      image: "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-      alt: "Modern front door installation and entryway",
-      location: "York County, SC"
-    },
-    {
-      title: "Hardwood Floor Installation",
-      description: "Beautiful oak hardwood flooring throughout the main living areas of this Rock Hill home.",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-      alt: "Hardwood flooring installation project",
-      location: "Rock Hill, SC"
-    },
-    {
-      title: "Custom Built-In Storage",
-      description: "Maximized storage space with custom built-in shelving and cabinetry solutions.",
-      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-      alt: "Custom built-in shelving project",
+      title: "Professional Plumbing Installation",
+      description: "Quality plumbing fixture installation with precision brass fittings and professional workmanship.",
+      image: "/attached_assets/IMG_0276_1752702485321.png",
+      alt: "Professional plumbing fixture installation",
       location: "York County, SC"
     }
   ];
