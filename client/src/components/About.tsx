@@ -1,4 +1,5 @@
 import { CheckCircle } from "lucide-react";
+import deckImage from "@assets/Residential-Decks-1_1752703216479.jpg";
 
 export default function About() {
   const stats = [
@@ -48,7 +49,7 @@ export default function About() {
           
           <div className="relative fade-in-up" style={{ animationDelay: '0.2s' }}>
             <img 
-              src="/attached_assets/Residential-Decks-1_1752703216479.jpg"
+              src={deckImage}
               alt="Rise Remodeling Co. deck construction projects in Rock Hill"
               className="rounded-2xl shadow-lg w-full modern-hover-lift"
             />
