@@ -79,12 +79,13 @@ export default function Portfolio() {
                   className="w-full h-48 object-cover cursor-pointer"
                 />
                 {hoveredImage === project.image && (
-                  <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 pointer-events-none">
-                    <div className="max-w-4xl max-h-[90vh] p-4">
+                  <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 pointer-events-none">
+                    <div className="max-w-5xl max-h-[85vh] w-full h-full flex items-center justify-center p-8">
                       <img 
                         src={project.image}
                         alt={project.alt}
-                        className="w-full h-full object-contain rounded-lg shadow-2xl"
+                        className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+                        style={{ minWidth: '400px', minHeight: '300px' }}
                       />
                     </div>
                   </div>
