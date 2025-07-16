@@ -38,7 +38,7 @@ export default function Hero() {
           <span className="modern-text-gradient">With Expert Craftsmanship</span>
         </h1>
         <p className="text-xl md:text-2xl mb-4 max-w-2xl mx-auto fade-in-up" style={{ animationDelay: '0.2s' }}>
-          "Born to Belong, Built to Last."
+          "Born to Last, Built to Belong."
         </p>
         <p className="modern-subtitle mb-6 max-w-3xl mx-auto opacity-90 fade-in-up" style={{ animationDelay: '0.4s' }}>
           Trusted Rock Hill remodeling contractor specializing in kitchens, bathrooms, doors, windows, and trim. 

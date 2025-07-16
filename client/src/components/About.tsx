@@ -19,7 +19,7 @@ export default function About() {
               Rise Remodeling Co. has been transforming Rock Hill homes for over two decades.
             </p>
             <p className="text-muted-foreground mb-6">
-              Our motto, "Born to Belong, Built to Last," represents our commitment to creating spaces 
+              Our motto, "Born to Last, Built to Belong," represents our commitment to creating spaces 
               that not only feel like home but stand the test of time. We understand that your home is 
               more than just a building—it's where memories are made, families gather, and life unfolds.
             </p>
