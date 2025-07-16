@@ -10,8 +10,8 @@ export default function FAQ() {
       answer: "Project timelines vary based on scope and complexity. Kitchen remodels typically take 3-6 weeks, bathroom renovations 2-4 weeks, and trim work 1-2 weeks. We provide detailed timelines during our consultation and keep you updated throughout the process."
     },
     {
-      question: "Do you provide free estimates?",
-      answer: "Yes! We offer completely free, no-obligation estimates. Our team will visit your home, assess the project, discuss your vision, and provide a detailed estimate at no cost. There's no pressure to commit—we want you to make an informed decision."
+      question: "What's the difference between quotes and estimates?",
+      answer: "We provide free, no-obligation quotes for all our services. A quote gives you a clear understanding of project scope and approximate costs. Detailed estimates, which include precise measurements and material specifications, require a small fee that's credited toward your project if you hire us. This ensures we can invest the time needed for accurate planning."
     },
     {
       question: "Are you licensed and insured?",
