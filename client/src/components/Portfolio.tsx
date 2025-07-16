@@ -1,4 +1,7 @@
 import { MapPin } from "lucide-react";
+import constructionImage from "@assets/image_1752702573525.png";
+import bathroomImage from "@assets/IMG_0274_1752702485321.png";
+import plumbingImage from "@assets/IMG_0276_1752702485321.png";
 
 export default function Portfolio() {
   const scrollToSection = (sectionId: string) => {
@@ -12,21 +15,21 @@ export default function Portfolio() {
     {
       title: "Active Home Remodeling Project",
       description: "Professional construction and remodeling in progress with skilled craftsmen and quality materials.",
-      image: "/attached_assets/image_1752702573525.png",
+      image: constructionImage,
       alt: "Active home remodeling construction project in Rock Hill",
       location: "Rock Hill, SC"
     },
     {
       title: "Bathroom Renovation",
       description: "Complete bathroom remodel with professional tile work and modern fixtures.",
-      image: "/attached_assets/IMG_0274_1752702485321.png",
+      image: bathroomImage,
       alt: "Bathroom renovation with tile flooring in Rock Hill",
       location: "Rock Hill, SC"
     },
     {
       title: "Professional Plumbing Installation",
       description: "Quality plumbing fixture installation with precision brass fittings and professional workmanship.",
-      image: "/attached_assets/IMG_0276_1752702485321.png",
+      image: plumbingImage,
       alt: "Professional plumbing fixture installation",
       location: "York County, SC"
     }
