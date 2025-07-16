@@ -3,6 +3,7 @@ import bathroomImage from "@assets/IMG_0274_1752702485321.png";
 import plumbingImage from "@assets/IMG_0276_1752702485321.png";
 import projectImage1 from "@assets/508439585593227258_1752704169241.jpeg";
 import projectImage2 from "@assets/9202957212892310662_1752704169242.jpeg";
+import projectImage3 from "@assets/5113705536296508580_1752704207399.jpeg";
 
 export default function Portfolio() {
   const scrollToSection = (sectionId: string) => {
@@ -40,6 +41,13 @@ export default function Portfolio() {
       image: projectImage2,
       alt: "Custom renovation project in York County",
       location: "York County, SC"
+    },
+    {
+      title: "Professional Remodeling Services",
+      description: "Quality renovation work with expert craftsmanship and professional results.",
+      image: projectImage3,
+      alt: "Professional remodeling project in Rock Hill",
+      location: "Rock Hill, SC"
     }
   ];
 
