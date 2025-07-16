@@ -10,6 +10,13 @@ export default function Portfolio() {
 
   const projects = [
     {
+      title: "Active Home Remodeling Project",
+      description: "Professional construction and remodeling in progress with skilled craftsmen and quality materials.",
+      image: "/attached_assets/image_1752702573525.png",
+      alt: "Active home remodeling construction project in Rock Hill",
+      location: "Rock Hill, SC"
+    },
+    {
       title: "Bathroom Renovation",
       description: "Complete bathroom remodel with professional tile work and modern fixtures.",
       image: "/attached_assets/IMG_0274_1752702485321.png",
