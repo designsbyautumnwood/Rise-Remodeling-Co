@@ -48,8 +48,8 @@ export default function About() {
           
           <div className="relative fade-in-up" style={{ animationDelay: '0.2s' }}>
             <img 
-              src="/src/assets/house-remodeling.svg"
-              alt="Rise Remodeling Co. team working on home renovation"
+              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt="Deck construction and remodeling work in progress"
               className="rounded-2xl shadow-lg w-full modern-hover-lift"
             />
             <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-lg modern-card">
