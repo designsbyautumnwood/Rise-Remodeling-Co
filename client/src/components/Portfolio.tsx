@@ -1,6 +1,8 @@
 import { MapPin } from "lucide-react";
 import bathroomImage from "@assets/IMG_0274_1752702485321.png";
 import plumbingImage from "@assets/IMG_0276_1752702485321.png";
+import projectImage1 from "@assets/508439585593227258_1752704169241.jpeg";
+import projectImage2 from "@assets/9202957212892310662_1752704169242.jpeg";
 
 export default function Portfolio() {
   const scrollToSection = (sectionId: string) => {
@@ -23,6 +25,20 @@ export default function Portfolio() {
       description: "Quality plumbing fixture installation with precision brass fittings and professional workmanship.",
       image: plumbingImage,
       alt: "Professional plumbing fixture installation",
+      location: "York County, SC"
+    },
+    {
+      title: "Home Remodeling Project",
+      description: "Professional renovation work showcasing quality craftsmanship and attention to detail.",
+      image: projectImage1,
+      alt: "Home remodeling project in Rock Hill",
+      location: "Rock Hill, SC"
+    },
+    {
+      title: "Custom Renovation Work",
+      description: "Expert remodeling services with professional installation and finishing work.",
+      image: projectImage2,
+      alt: "Custom renovation project in York County",
       location: "York County, SC"
     }
   ];
