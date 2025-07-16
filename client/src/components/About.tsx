@@ -48,7 +48,7 @@ export default function About() {
           
           <div className="relative fade-in-up" style={{ animationDelay: '0.2s' }}>
             <img 
-              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
+              src="/attached_assets/image_1752702573525.png"
               alt="Rise Remodeling Co. team working on home renovation"
               className="rounded-2xl shadow-lg w-full modern-hover-lift"
             />
