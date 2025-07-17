@@ -33,11 +33,11 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3 hover-scale">
-            <div className="p-1">
+            <div className="flex items-center p-1">
               <img 
                 src={riseLogoImage} 
                 alt="Rise Remodeling Co. Logo" 
-                className="h-14 w-14 object-contain"
+                className="h-12 w-12 object-contain"
                 style={{ 
                   filter: 'invert(1) brightness(1.5)',
                   background: 'transparent'
