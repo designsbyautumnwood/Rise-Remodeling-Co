@@ -37,31 +37,33 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="section-padding bg-cream">
-      <div className="container-padding">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+      <div className="container-padding px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-gray-900">Frequently Asked Questions</h2>
+          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Get answers to common questions about our remodeling process, pricing, and timelines.
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-sm mb-4 overflow-hidden">
+            <div key={index} className="bg-white rounded-xl shadow-sm mb-4 sm:mb-6 overflow-hidden border border-gray-100 hover:shadow-md transition-shadow">
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-4 text-left font-semibold text-lg flex items-center justify-between hover:bg-gray-50 transition-colors text-gray-900"
+                className="w-full px-4 sm:px-6 py-4 sm:py-5 text-left font-semibold text-base sm:text-lg flex items-center justify-between hover:bg-gray-50 transition-colors text-gray-900 touch-manipulation"
               >
-                <span>{faq.question}</span>
+                <span className="pr-4 leading-relaxed">{faq.question}</span>
                 <ChevronDown 
-                  className={`w-5 h-5 transform transition-transform text-gray-600 ${
+                  className={`w-5 h-5 sm:w-6 sm:h-6 transform transition-transform duration-200 text-gray-500 flex-shrink-0 ${
                     openIndex === index ? "rotate-180" : ""
                   }`}
                 />
               </button>
               {openIndex === index && (
-                <div className="px-6 pb-4 text-gray-700">
-                  <p>{faq.answer}</p>
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6 text-gray-700 bg-gray-50/50">
+                  <div className="pt-2 border-t border-gray-200">
+                    <p className="text-sm sm:text-base leading-relaxed">{faq.answer}</p>
+                  </div>
                 </div>
               )}
             </div>
