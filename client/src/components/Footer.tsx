@@ -1,6 +1,5 @@
 import { Facebook, Twitter, Linkedin } from "lucide-react";
-import TransparentHammerLogo from "./TransparentHammerLogo";
-import TransparentTextLogo from "./TransparentTextLogo";
+import riseLogoImage from "@assets/rise_remodeling_logo_transparent_1752776299387.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -17,10 +16,13 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <TransparentHammerLogo className="w-10 h-10 text-white" />
+              <img 
+                src={riseLogoImage} 
+                alt="Rise Remodeling Co. Logo" 
+                className="h-12 w-auto filter brightness-0 invert"
+              />
               <div>
-                <TransparentTextLogo className="h-8 text-white" />
-                <p className="text-sm opacity-80">Born to Belong, Built to Last</p>
+                <p className="text-sm opacity-80">"Born to Last, Built to Belong"</p>
               </div>
             </div>
             <p className="text-sm opacity-80 mb-4">

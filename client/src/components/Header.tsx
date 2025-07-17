@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Menu, X, Phone } from "lucide-react";
-import TransparentHammerLogo from "./TransparentHammerLogo";
-import TransparentTextLogo from "./TransparentTextLogo";
+import riseLogoImage from "@assets/rise_remodeling_logo_transparent_1752776299387.png";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,10 +33,13 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3 hover-scale">
-            <TransparentHammerLogo className="w-10 h-10 text-primary float-animation" />
-            <div>
-              <TransparentTextLogo className="h-8 text-primary hover-glow" />
-              <p className="text-sm text-muted-foreground hidden sm:block">"Born to Last, Built to Belong"</p>
+            <img 
+              src={riseLogoImage} 
+              alt="Rise Remodeling Co. Logo" 
+              className="h-12 w-auto filter brightness-0 invert hover-glow"
+            />
+            <div className="hidden sm:block">
+              <p className="text-sm text-muted-foreground">"Born to Last, Built to Belong"</p>
             </div>
           </div>
 
@@ -76,7 +78,7 @@ export default function Header() {
                 (803) 203-8664
               </a>
               <button onClick={() => scrollToSection("contact")} className="modern-button">
-                Get Free Estimate
+                Get Free Quote
               </button>
             </div>
           )}
@@ -119,7 +121,7 @@ export default function Header() {
                 (803) 203-8664
               </a>
               <button onClick={() => scrollToSection("contact")} className="btn-primary w-full mx-3 mt-2">
-                Get Free Estimate
+                Get Free Quote
               </button>
             </div>
           </div>
