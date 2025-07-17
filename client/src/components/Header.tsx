@@ -90,7 +90,7 @@ export default function Header() {
           {/* CTA Button */}
           {!isMobile && (
             <div className="flex items-center space-x-4">
-              <a href="tel:+18032038664" className="text-white hover:text-blue-300 transition-colors flex items-center">
+              <a href="tel:+18032038664" className="text-blue-400 hover:text-blue-300 transition-colors flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
                 (803) 203-8664
               </a>
