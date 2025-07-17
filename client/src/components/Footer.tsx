@@ -19,11 +19,7 @@ export default function Footer() {
               <img 
                 src={riseLogoImage} 
                 alt="Rise Remodeling Co. Logo" 
-                className="h-16 w-16 object-contain"
-                style={{ 
-                  filter: 'brightness(0) invert(1)',
-                  backgroundColor: 'transparent'
-                }}
+                className="h-16 w-16 object-contain brightness-0 invert"
               />
               <div>
                 <p className="text-sm opacity-80">"Born to Last, Built to Belong"</p>
