@@ -45,7 +45,7 @@ export default function Header() {
               />
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-white">Rise Remodeling Co</h1>
+              <h1 className="text-xl font-bold text-blue-400">Rise Remodeling Co</h1>
               <p className="text-sm text-muted-foreground">"Born to Last, Built to Belong"</p>
             </div>
           </div>
