@@ -39,8 +39,8 @@ export default function FAQ() {
     <section id="faq" className="section-padding bg-cream">
       <div className="container-padding px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-gray-900">Frequently Asked Questions</h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-white">Frequently Asked Questions</h2>
+          <p className="text-base sm:text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
             Get answers to common questions about our remodeling process, pricing, and timelines.
           </p>
         </div>
