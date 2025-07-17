@@ -16,14 +16,13 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <div className="relative">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2">
                 <img 
                   src={riseLogoImage} 
                   alt="Rise Remodeling Co. Logo" 
-                  className="h-16 w-16 object-contain"
+                  className="h-12 w-12 object-contain"
                   style={{ 
-                    filter: 'brightness(0) invert(1) contrast(2)',
-                    mixBlendMode: 'multiply',
+                    filter: 'invert(1) brightness(1.2)',
                     background: 'transparent'
                   }}
                 />
