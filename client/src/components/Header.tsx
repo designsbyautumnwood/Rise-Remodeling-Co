@@ -50,6 +50,19 @@ export default function Header() {
             </div>
           </div>
 
+          {/* Mobile Contact Button - Fixed in center */}
+          {isMobile && (
+            <div className="absolute left-1/2 transform -translate-x-1/2">
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="bg-gradient-to-r from-blue-600 to-blue-500 text-white px-4 py-2 rounded-lg font-semibold text-sm touch-manipulation hover:shadow-lg transition-all duration-300 flex items-center space-x-1"
+              >
+                <Phone className="w-4 h-4" />
+                <span>Contact</span>
+              </button>
+            </div>
+          )}
+
           {/* Desktop Navigation */}
           {!isMobile && (
             <div className="flex items-center space-x-8">
@@ -61,9 +74,6 @@ export default function Header() {
               </button>
               <button onClick={() => scrollToSection("portfolio")} className="modern-nav-item">
                 Portfolio
-              </button>
-              <button onClick={() => scrollToSection("testimonials")} className="modern-nav-item">
-                Reviews
               </button>
               <button onClick={() => scrollToSection("testimonials")} className="modern-nav-item">
                 Reviews
@@ -94,7 +104,7 @@ export default function Header() {
           {isMobile && (
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 sm:p-3 touch-manipulation"
+              className="p-2 sm:p-3 touch-manipulation relative z-10"
               aria-label="Toggle navigation menu"
             >
               {isMenuOpen ? <X className="w-6 h-6 sm:w-7 sm:h-7" /> : <Menu className="w-6 h-6 sm:w-7 sm:h-7" />}
