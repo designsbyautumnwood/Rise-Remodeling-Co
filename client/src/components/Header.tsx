@@ -66,22 +66,22 @@ export default function Header() {
           {/* Desktop Navigation */}
           {!isMobile && (
             <div className="flex items-center space-x-8">
-              <button onClick={() => scrollToSection("services")} className="modern-nav-item">
+              <button onClick={() => scrollToSection("services")} className="modern-nav-item text-white hover:text-blue-300">
                 Services
               </button>
-              <button onClick={() => scrollToSection("about")} className="modern-nav-item">
+              <button onClick={() => scrollToSection("about")} className="modern-nav-item text-white hover:text-blue-300">
                 About
               </button>
-              <button onClick={() => scrollToSection("portfolio")} className="modern-nav-item">
+              <button onClick={() => scrollToSection("portfolio")} className="modern-nav-item text-white hover:text-blue-300">
                 Portfolio
               </button>
-              <button onClick={() => scrollToSection("testimonials")} className="modern-nav-item">
+              <button onClick={() => scrollToSection("testimonials")} className="modern-nav-item text-white hover:text-blue-300">
                 Reviews
               </button>
-              <button onClick={() => scrollToSection("faq")} className="modern-nav-item">
+              <button onClick={() => scrollToSection("faq")} className="modern-nav-item text-white hover:text-blue-300">
                 FAQ
               </button>
-              <button onClick={() => scrollToSection("contact")} className="modern-nav-item">
+              <button onClick={() => scrollToSection("contact")} className="modern-nav-item text-white hover:text-blue-300">
                 Contact
               </button>
             </div>
@@ -90,7 +90,7 @@ export default function Header() {
           {/* CTA Button */}
           {!isMobile && (
             <div className="flex items-center space-x-4">
-              <a href="tel:+18032038664" className="text-primary hover:text-secondary transition-colors flex items-center">
+              <a href="tel:+18032038664" className="text-white hover:text-blue-300 transition-colors flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
                 (803) 203-8664
               </a>
@@ -104,7 +104,7 @@ export default function Header() {
           {isMobile && (
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 sm:p-3 touch-manipulation relative z-10"
+              className="p-2 sm:p-3 touch-manipulation relative z-10 text-white"
               aria-label="Toggle navigation menu"
             >
               {isMenuOpen ? <X className="w-6 h-6 sm:w-7 sm:h-7" /> : <Menu className="w-6 h-6 sm:w-7 sm:h-7" />}
