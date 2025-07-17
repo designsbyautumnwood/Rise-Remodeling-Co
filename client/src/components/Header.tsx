@@ -33,13 +33,15 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3 hover-scale">
-            <div className="bg-white rounded-lg p-2">
-              <img 
-                src={riseLogoImage} 
-                alt="Rise Remodeling Co. Logo" 
-                className="h-12 w-12 object-contain"
-              />
-            </div>
+            <img 
+              src={riseLogoImage} 
+              alt="Rise Remodeling Co. Logo" 
+              className="h-16 w-16 object-contain"
+              style={{ 
+                filter: 'brightness(0) invert(1)',
+                backgroundColor: 'transparent'
+              }}
+            />
             <div className="hidden sm:block">
               <p className="text-sm text-muted-foreground">"Born to Last, Built to Belong"</p>
             </div>

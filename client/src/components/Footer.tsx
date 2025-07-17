@@ -16,13 +16,15 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <div className="bg-white rounded-lg p-2">
-                <img 
-                  src={riseLogoImage} 
-                  alt="Rise Remodeling Co. Logo" 
-                  className="h-12 w-12 object-contain"
-                />
-              </div>
+              <img 
+                src={riseLogoImage} 
+                alt="Rise Remodeling Co. Logo" 
+                className="h-16 w-16 object-contain"
+                style={{ 
+                  filter: 'brightness(0) invert(1)',
+                  backgroundColor: 'transparent'
+                }}
+              />
               <div>
                 <p className="text-sm opacity-80">"Born to Last, Built to Belong"</p>
               </div>
