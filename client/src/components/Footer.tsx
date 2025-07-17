@@ -1,5 +1,5 @@
 import { Facebook, Twitter, Linkedin } from "lucide-react";
-import RiseLogoSVG from "./RiseLogoSVG";
+import riseLogoImage from "@assets/image_1752776941690.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -16,7 +16,18 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <RiseLogoSVG className="h-16 w-16 text-white" />
+              <div className="relative">
+                <img 
+                  src={riseLogoImage} 
+                  alt="Rise Remodeling Co. Logo" 
+                  className="h-16 w-16 object-contain"
+                  style={{ 
+                    filter: 'brightness(0) invert(1) contrast(2)',
+                    mixBlendMode: 'multiply',
+                    background: 'transparent'
+                  }}
+                />
+              </div>
               <div>
                 <p className="text-sm opacity-80">"Born to Last, Built to Belong"</p>
               </div>
