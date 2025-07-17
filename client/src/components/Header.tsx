@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Menu, X, Phone } from "lucide-react";
-import RiseLogoSVG from "./RiseLogoSVG";
+import riseLogoImage from "@assets/image_1752776507214.png";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,7 +33,13 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3 hover-scale">
-            <RiseLogoSVG className="h-16 w-16 text-white" />
+            <div className="bg-white rounded-lg p-2">
+              <img 
+                src={riseLogoImage} 
+                alt="Rise Remodeling Co. Logo" 
+                className="h-12 w-12 object-contain"
+              />
+            </div>
             <div className="hidden sm:block">
               <p className="text-sm text-muted-foreground">"Born to Last, Built to Belong"</p>
             </div>
