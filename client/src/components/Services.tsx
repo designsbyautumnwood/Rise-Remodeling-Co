@@ -68,11 +68,11 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="modern-card p-8 stagger-animation relative cursor-pointer hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              className="modern-card p-4 sm:p-6 lg:p-8 stagger-animation relative cursor-pointer hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 touch-manipulation"
               onClick={() => scrollToSection("contact")}
             >
               {service.badge && (

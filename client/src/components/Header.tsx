@@ -29,15 +29,15 @@ export default function Header() {
     <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
       isScrolled ? "modern-header modern-shadow" : "modern-header"
     }`}>
-      <nav className="container-padding py-4">
+      <nav className="container-padding py-3 sm:py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3 hover-scale">
+          <div className="flex items-center space-x-2 sm:space-x-3 hover-scale">
             <div className="flex items-center p-1">
               <img 
                 src={riseLogoImage} 
                 alt="Rise Remodeling Co. Logo" 
-                className="h-12 w-12 object-contain"
+                className="h-10 w-10 sm:h-12 sm:w-12 object-contain"
                 style={{ 
                   filter: 'invert(1) brightness(1.5)',
                   background: 'transparent'
@@ -45,8 +45,8 @@ export default function Header() {
               />
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-blue-400">Rise Remodeling Co</h1>
-              <p className="text-sm text-muted-foreground">"Born to Last, Built to Belong"</p>
+              <h1 className="text-lg sm:text-xl font-bold text-blue-400">Rise Remodeling Co</h1>
+              <p className="text-xs sm:text-sm text-muted-foreground">"Born to Last, Built to Belong"</p>
             </div>
           </div>
 
@@ -94,40 +94,41 @@ export default function Header() {
           {isMobile && (
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2"
+              className="p-2 sm:p-3 touch-manipulation"
+              aria-label="Toggle navigation menu"
             >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMenuOpen ? <X className="w-6 h-6 sm:w-7 sm:h-7" /> : <Menu className="w-6 h-6 sm:w-7 sm:h-7" />}
             </button>
           )}
         </div>
 
         {/* Mobile Menu */}
         {isMobile && (
-          <div className={`${isMenuOpen ? "block" : "hidden"} pt-4 pb-3 space-y-1`}>
-            <button onClick={() => scrollToSection("services")} className="block w-full text-left px-3 py-2 hover:text-secondary transition-colors">
+          <div className={`${isMenuOpen ? "block" : "hidden"} pt-4 pb-3 space-y-1 border-t border-white/10 mt-4`}>
+            <button onClick={() => { scrollToSection("services"); setIsMenuOpen(false); }} className="block w-full text-left px-4 py-3 hover:text-secondary transition-colors text-base font-medium touch-manipulation">
               Services
             </button>
-            <button onClick={() => scrollToSection("about")} className="block w-full text-left px-3 py-2 hover:text-secondary transition-colors">
+            <button onClick={() => { scrollToSection("about"); setIsMenuOpen(false); }} className="block w-full text-left px-4 py-3 hover:text-secondary transition-colors text-base font-medium touch-manipulation">
               About
             </button>
-            <button onClick={() => scrollToSection("portfolio")} className="block w-full text-left px-3 py-2 hover:text-secondary transition-colors">
+            <button onClick={() => { scrollToSection("portfolio"); setIsMenuOpen(false); }} className="block w-full text-left px-4 py-3 hover:text-secondary transition-colors text-base font-medium touch-manipulation">
               Portfolio
             </button>
-            <button onClick={() => scrollToSection("testimonials")} className="block w-full text-left px-3 py-2 hover:text-secondary transition-colors">
+            <button onClick={() => { scrollToSection("testimonials"); setIsMenuOpen(false); }} className="block w-full text-left px-4 py-3 hover:text-secondary transition-colors text-base font-medium touch-manipulation">
               Reviews
             </button>
-            <button onClick={() => scrollToSection("faq")} className="block w-full text-left px-3 py-2 hover:text-secondary transition-colors">
+            <button onClick={() => { scrollToSection("faq"); setIsMenuOpen(false); }} className="block w-full text-left px-4 py-3 hover:text-secondary transition-colors text-base font-medium touch-manipulation">
               FAQ
             </button>
-            <button onClick={() => scrollToSection("contact")} className="block w-full text-left px-3 py-2 hover:text-secondary transition-colors">
+            <button onClick={() => { scrollToSection("contact"); setIsMenuOpen(false); }} className="block w-full text-left px-4 py-3 hover:text-secondary transition-colors text-base font-medium touch-manipulation">
               Contact
             </button>
-            <div className="pt-4 border-t">
-              <a href="tel:+18032038664" className="flex items-center px-3 py-2 text-primary hover:text-secondary">
-                <Phone className="w-4 h-4 mr-2" />
+            <div className="pt-4 border-t border-white/10">
+              <a href="tel:+18032038664" className="flex items-center px-4 py-3 text-primary hover:text-secondary text-base font-medium touch-manipulation">
+                <Phone className="w-5 h-5 mr-3" />
                 (803) 203-8664
               </a>
-              <button onClick={() => scrollToSection("contact")} className="btn-primary w-full mx-3 mt-2">
+              <button onClick={() => { scrollToSection("contact"); setIsMenuOpen(false); }} className="btn-primary w-full mx-4 mt-3 py-3 text-base font-semibold touch-manipulation">
                 Get Free Quote
               </button>
             </div>

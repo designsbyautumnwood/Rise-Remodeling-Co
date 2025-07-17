@@ -3,6 +3,12 @@ import { Star } from "lucide-react";
 export default function Testimonials() {
   const testimonials = [
     {
+      text: "Thank you for the remodeling and my bathroom kitchen and laundry room. It looks amazing. I will definitely be recommending people to you to do the remodeling for their house.",
+      author: "Ariel Pierce",
+      location: "Rock Hill, SC",
+      initials: "AP"
+    },
+    {
       text: "Wow, what a difference! Our kitchen went from 1990s disaster to something you'd see in a magazine. The guys were great - showed up on time, cleaned up after themselves, and actually listened to what we wanted. My wife is obsessed with the new island!",
       author: "Sarah & Mike Thompson",
       location: "Rock Hill, SC",
@@ -38,24 +44,24 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-cream rounded-xl p-8">
-              <div className="flex items-center mb-6">
+            <div key={index} className="bg-cream rounded-xl p-4 sm:p-6 lg:p-8 touch-manipulation">
+              <div className="flex items-center mb-4 sm:mb-6">
                 <div className="flex">
                   {renderStars()}
                 </div>
               </div>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-muted-foreground mb-4 sm:mb-6 text-sm sm:text-base">
                 "{testimonial.text}"
               </p>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
-                  <span className="text-white font-semibold">{testimonial.initials}</span>
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary rounded-full flex items-center justify-center mr-3 sm:mr-4">
+                  <span className="text-white font-semibold text-sm sm:text-base">{testimonial.initials}</span>
                 </div>
                 <div>
-                  <h4 className="font-semibold">{testimonial.author}</h4>
-                  <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                  <h4 className="font-semibold text-sm sm:text-base">{testimonial.author}</h4>
+                  <p className="text-xs sm:text-sm text-muted-foreground">{testimonial.location}</p>
                 </div>
               </div>
             </div>

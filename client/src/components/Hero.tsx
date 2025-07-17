@@ -33,43 +33,43 @@ export default function Hero() {
             <span className="text-sm font-medium text-blue-300">🏠 Professional Contractor in Rock Hill</span>
           </div>
         </div>
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight fade-in-up">
-          Transform Your Home<br />
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight fade-in-up px-4">
+          Transform Your Home<br className="hidden sm:block" />
           <span className="modern-text-gradient">With Expert Craftsmanship</span>
         </h1>
-        <p className="text-xl md:text-2xl mb-4 max-w-2xl mx-auto fade-in-up" style={{ animationDelay: '0.2s' }}>
+        <p className="text-lg sm:text-xl md:text-2xl mb-3 sm:mb-4 max-w-2xl mx-auto fade-in-up px-4" style={{ animationDelay: '0.2s' }}>
           "Born to Last, Built to Belong."
         </p>
-        <p className="modern-subtitle mb-6 max-w-3xl mx-auto opacity-90 fade-in-up" style={{ animationDelay: '0.4s' }}>
+        <p className="modern-subtitle mb-4 sm:mb-6 max-w-3xl mx-auto opacity-90 fade-in-up text-sm sm:text-base px-4" style={{ animationDelay: '0.4s' }}>
           Trusted Rock Hill remodeling contractor specializing in kitchens, bathrooms, doors, windows, and trim. 
           Serving York County families with 20+ years of combined experience.
         </p>
         
-        <div className="flex flex-wrap justify-center items-center gap-6 mb-8 fade-in-up" style={{ animationDelay: '0.5s' }}>
-          <div className="flex items-center text-sm text-blue-300">
-            <span className="mr-2">🛡️</span>
+        <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-6 mb-6 sm:mb-8 fade-in-up px-4" style={{ animationDelay: '0.5s' }}>
+          <div className="flex items-center text-xs sm:text-sm text-blue-300">
+            <span className="mr-1 sm:mr-2">🛡️</span>
             <span>Licensed & Insured</span>
           </div>
-          <div className="flex items-center text-sm text-blue-300">
-            <span className="mr-2">🏠</span>
+          <div className="flex items-center text-xs sm:text-sm text-blue-300">
+            <span className="mr-1 sm:mr-2">🏠</span>
             <span>Local Rock Hill Contractor</span>
           </div>
-          <div className="flex items-center text-sm text-blue-300">
-            <span className="mr-2">⚡</span>
+          <div className="flex items-center text-xs sm:text-sm text-blue-300">
+            <span className="mr-1 sm:mr-2">⚡</span>
             <span>Free Quotes</span>
           </div>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 fade-in-up" style={{ animationDelay: '0.6s' }}>
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12 fade-in-up px-4" style={{ animationDelay: '0.6s' }}>
           <button 
             onClick={() => scrollToSection("contact")}
-            className="modern-button w-full sm:w-auto text-lg"
+            className="modern-button w-full sm:w-auto text-base sm:text-lg py-3 sm:py-4 px-6 sm:px-8 touch-manipulation"
           >
             Get Your Free Quote
           </button>
           <button 
             onClick={() => scrollToSection("portfolio")}
-            className="bg-white/10 backdrop-blur-sm w-full sm:w-auto px-8 py-4 text-lg font-semibold text-white modern-hover-lift border-2 border-white/30 hover:border-white/50 hover:bg-white/20 transition-all duration-300"
+            className="bg-white/10 backdrop-blur-sm w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white modern-hover-lift border-2 border-white/30 hover:border-white/50 hover:bg-white/20 transition-all duration-300 touch-manipulation"
           >
             View Our Work
           </button>

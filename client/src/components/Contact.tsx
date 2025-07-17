@@ -61,21 +61,21 @@ export default function Contact() {
   return (
     <section id="contact" className="section-padding bg-white">
       <div className="container-padding">
-        <div className="text-center mb-16 fade-in-up">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 modern-text-gradient">Ready to Transform Your Home?</h2>
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16 fade-in-up px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 modern-text-gradient">Ready to Transform Your Home?</h2>
           <p className="modern-subtitle max-w-3xl mx-auto">
             Get started with your free consultation today. We'll discuss your vision, assess your space, 
             and provide a detailed quote for your project.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
           {/* Contact Form */}
-          <div className="modern-card p-8 fade-in-up">
-            <h3 className="text-2xl font-semibold mb-6 modern-accent">Get Your Free Quote</h3>
+          <div className="modern-card p-4 sm:p-6 lg:p-8 fade-in-up">
+            <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 modern-accent">Get Your Free Quote</h3>
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 sm:space-y-6">
+                <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                   <FormField
                     control={form.control}
                     name="firstName"
