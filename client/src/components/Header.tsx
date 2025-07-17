@@ -36,7 +36,11 @@ export default function Header() {
             <img 
               src={riseLogoImage} 
               alt="Rise Remodeling Co. Logo" 
-              className="h-12 w-auto filter brightness-0 invert hover-glow"
+              className="h-16 w-auto object-contain"
+              style={{ 
+                filter: 'brightness(0) invert(1)',
+                mixBlendMode: 'normal'
+              }}
             />
             <div className="hidden sm:block">
               <p className="text-sm text-muted-foreground">"Born to Last, Built to Belong"</p>
