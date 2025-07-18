@@ -34,7 +34,7 @@ export default function Hero() {
           </div>
         </div>
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight fade-in-up px-4">
-          Transform Your Home<br className="hidden sm:block" />
+          Transform Your Home<br className="hidden sm:block" /><span className="sm:hidden"> </span>
           <span className="modern-text-gradient">With Expert Craftsmanship</span>
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl mb-3 sm:mb-4 max-w-2xl mx-auto fade-in-up px-4" style={{ animationDelay: '0.2s' }}>
