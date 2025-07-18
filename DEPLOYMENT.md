@@ -13,9 +13,14 @@ Make sure your code is pushed to a GitHub repository.
 
 ### 3. Configure Build Settings
 - **Environment**: Node
-- **Build Command**: `npm run build`
+- **Build Command**: `./render-build.sh`
 - **Start Command**: `npm start`
 - **Node Version**: 18+ (auto-detected)
+
+**Alternative Build Command (if the script doesn't work):**
+```bash
+npm install && ./node_modules/.bin/vite build && ./node_modules/.bin/esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+```
 
 ### 4. Set Environment Variables
 Add these environment variables in Render's dashboard:
