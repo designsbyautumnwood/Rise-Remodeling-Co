@@ -9,7 +9,7 @@ interface EmailConfig {
 
 export async function sendContactEmail(contactData: InsertContact, config: EmailConfig) {
   // Create transporter using Gmail SMTP
-  const transporter = nodemailer.createTransporter({
+  const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: config.user,

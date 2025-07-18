@@ -40,7 +40,8 @@ Preferred communication style: Simple, everyday language.
 - **Footer**: Company information and additional links
 
 ### Backend Components
-- **Contact API**: Handles form submissions with validation
+- **Contact API**: Handles form submissions with validation and email notifications
+- **Email Service**: Nodemailer-based Gmail integration for automatic email notifications
 - **Storage Layer**: Abstracted storage interface supporting in-memory and database storage
 - **Route Management**: Express.js routes for API endpoints
 - **Error Handling**: Centralized error handling middleware
@@ -52,8 +53,9 @@ Preferred communication style: Simple, everyday language.
 3. **API Request**: Form data is sent to Express.js backend via REST API
 4. **Server Validation**: Backend validates data using shared Zod schemas
 5. **Data Storage**: Contact information is stored (currently in-memory, designed for database)
-6. **Response**: Success/error responses are sent back to the frontend
-7. **User Feedback**: Toast notifications inform users of submission status
+6. **Email Notification**: Automated email sent to RiseRemodelingCompany@gmail.com with form details
+7. **Response**: Success/error responses are sent back to the frontend
+8. **User Feedback**: Toast notifications inform users of submission status
 
 ## External Dependencies
 
@@ -68,6 +70,7 @@ Preferred communication style: Simple, everyday language.
 - **Database**: Neon PostgreSQL (serverless)
 - **ORM**: Drizzle ORM with PostgreSQL dialect
 - **Session Storage**: connect-pg-simple for PostgreSQL sessions
+- **Email Service**: Nodemailer with Gmail SMTP integration
 - **Validation**: Zod for runtime type checking
 
 ### Development Dependencies
