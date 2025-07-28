@@ -72,7 +72,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="modern-card p-4 sm:p-6 lg:p-8 stagger-animation relative cursor-pointer hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 touch-manipulation"
+              className="modern-card p-6 sm:p-8 lg:p-10 stagger-animation relative cursor-pointer hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 touch-manipulation"
               onClick={() => scrollToSection("contact")}
             >
               {service.badge && (

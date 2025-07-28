@@ -53,10 +53,10 @@ export default function About() {
               alt="Rise Remodeling Co. deck construction projects in Rock Hill"
               className="rounded-2xl shadow-lg w-full modern-hover-lift"
             />
-            <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-lg modern-card">
+            <div className="absolute -bottom-4 -right-4 bg-white rounded-2xl p-8 shadow-lg modern-card min-w-[200px]">
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary mb-1 modern-accent">Locally Owned</div>
-                <div className="text-sm text-muted-foreground">Rock Hill, SC</div>
+                <div className="text-xl font-bold text-primary mb-2 modern-accent whitespace-nowrap">Locally Owned</div>
+                <div className="text-base text-muted-foreground whitespace-nowrap">Rock Hill, SC</div>
               </div>
             </div>
           </div>

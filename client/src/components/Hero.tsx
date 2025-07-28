@@ -33,19 +33,19 @@ export default function Hero() {
             <span className="text-sm font-medium text-blue-300">🏠 Professional Contractor in Rock Hill</span>
           </div>
         </div>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight fade-in-up px-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight fade-in-up px-6 sm:px-4">
           Transform Your Home<br className="hidden sm:block" /><span className="sm:hidden"> </span>
           <span className="modern-text-gradient">With Expert Craftsmanship</span>
         </h1>
-        <p className="text-lg sm:text-xl md:text-2xl mb-3 sm:mb-4 max-w-2xl mx-auto fade-in-up px-4" style={{ animationDelay: '0.2s' }}>
+        <p className="text-lg sm:text-xl md:text-2xl mb-3 sm:mb-4 max-w-2xl mx-auto fade-in-up px-6 sm:px-4" style={{ animationDelay: '0.2s' }}>
           "Born to Last, Built to Belong."
         </p>
-        <p className="modern-subtitle mb-4 sm:mb-6 max-w-3xl mx-auto opacity-90 fade-in-up text-sm sm:text-base px-4" style={{ animationDelay: '0.4s' }}>
+        <p className="modern-subtitle mb-4 sm:mb-6 max-w-3xl mx-auto opacity-90 fade-in-up text-sm sm:text-base px-6 sm:px-4" style={{ animationDelay: '0.4s' }}>
           Trusted Rock Hill remodeling contractor specializing in kitchens, bathrooms, doors, windows, and trim. 
           Serving York County families with 20+ years of combined experience.
         </p>
         
-        <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-6 mb-6 sm:mb-8 fade-in-up px-4" style={{ animationDelay: '0.5s' }}>
+        <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-6 mb-6 sm:mb-8 fade-in-up px-6 sm:px-4" style={{ animationDelay: '0.5s' }}>
           <div className="flex items-center text-xs sm:text-sm text-blue-300">
             <span className="mr-1 sm:mr-2">🛡️</span>
             <span>Licensed & Insured</span>

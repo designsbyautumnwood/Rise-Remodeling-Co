@@ -46,13 +46,13 @@ export default function Testimonials() {
 
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-cream rounded-xl p-4 sm:p-6 lg:p-8 touch-manipulation">
+            <div key={index} className="bg-cream rounded-xl p-6 sm:p-8 lg:p-10 touch-manipulation">
               <div className="flex items-center mb-4 sm:mb-6">
                 <div className="flex">
                   {renderStars()}
                 </div>
               </div>
-              <p className="text-muted-foreground mb-4 sm:mb-6 text-sm sm:text-base">
+              <p className="text-muted-foreground mb-4 sm:mb-6 text-sm sm:text-base leading-relaxed">
                 "{testimonial.text}"
               </p>
               <div className="flex items-center">

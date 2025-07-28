@@ -44,7 +44,7 @@ export default function Process() {
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-white text-xl font-bold">{step.number}</span>
               </div>
-              <h3 className="text-xl font-semibold mb-4">{step.title}</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">{step.title}</h3>
               <p className="text-muted-foreground">{step.description}</p>
             </div>
           ))}
