@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Menu, X, Phone } from "lucide-react";
 import riseLogoImage from "@assets/Rise_Hammer_Icon_Transparent_Cleaned_1752778537067.png";
+import { trackEvent } from "@/lib/analytics";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,6 +23,9 @@ export default function Header() {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
       setIsMenuOpen(false);
+      
+      // Track navigation clicks
+      trackEvent('navigation', 'header', sectionId);
     }
   };
 

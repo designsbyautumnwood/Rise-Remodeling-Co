@@ -1,10 +1,14 @@
 import { CheckCircle, Sparkles, Zap } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      
+      // Track hero CTA clicks
+      trackEvent('cta_click', 'hero', sectionId);
     }
   };
 

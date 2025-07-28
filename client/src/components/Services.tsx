@@ -1,8 +1,13 @@
+import { trackEvent } from "@/lib/analytics";
+
 export default function Services() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      
+      // Track service card clicks
+      trackEvent('service_click', 'services', sectionId);
     }
   };
 

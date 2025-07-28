@@ -11,6 +11,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
 import { insertContactSchema, type InsertContact } from "@shared/schema";
+import { trackEvent } from "@/lib/analytics";
 
 export default function Contact() {
   const { toast } = useToast();
@@ -40,6 +41,10 @@ export default function Contact() {
         title: "Success!",
         description: "Thank you for your message. We'll contact you within 24 hours.",
       });
+      
+      // Track successful form submission
+      trackEvent('form_submit', 'contact', 'contact_form_success');
+      
       form.reset();
       setIsSubmitting(false);
     },
