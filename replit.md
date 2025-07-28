@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a modern, mobile-first website for Rise Remodeling Co., a Rock Hill, South Carolina-based remodeling contractor. The application is built as a single-page application (SPA) using React with TypeScript, featuring a lead generation contact form and SEO-optimized content structure.
+This is a modern, mobile-first website for Rise Remodeling Co., a Rock Hill, South Carolina-based remodeling contractor. The application is built as a single-page application (SPA) using React with TypeScript, featuring a lead generation contact form, comprehensive SEO optimization, and advanced search engine visibility features.
 
 ## User Preferences
 

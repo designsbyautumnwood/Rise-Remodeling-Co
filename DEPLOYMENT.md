@@ -51,14 +51,29 @@ Click "Create Web Service" and Render will:
 2. `esbuild` - Bundles Node.js server to `dist/index.js`
 3. `node dist/index.js` - Starts production server
 
+## SEO & Performance Features
+- **SEO Optimized**: Complete sitemap.xml, meta tags, and structured data
+- **Local Search Ready**: Optimized for Rock Hill, SC searches
+- **Social Media Optimized**: Open Graph and Twitter Cards
+- **Mobile Performance**: Fast loading, responsive design
+- **Google Analytics Ready**: Prepared for tracking setup
+
 ## Important Notes
 - The server serves both API routes and static files
 - Contact form emails will be sent via Gmail SMTP
 - Currently uses in-memory storage (data resets on restarts)
 - Mobile-optimized and fully responsive
 - No database setup required for basic functionality
+- Includes comprehensive SEO optimization out of the box
+
+## Post-Deployment SEO Setup
+1. Submit sitemap to Google Search Console: `yoursite.onrender.com/sitemap.xml`
+2. Set up Google My Business profile
+3. Install Google Analytics for tracking
+4. Monitor performance and search rankings
 
 ## Troubleshooting
 - If build fails, check Node.js version compatibility
 - If emails don't send, verify Gmail credentials
 - If assets don't load, check build output in `dist/public`
+- For SEO issues, verify all URLs in sitemap.xml match your domain
