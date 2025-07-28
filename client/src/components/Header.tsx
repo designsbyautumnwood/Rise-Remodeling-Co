@@ -26,11 +26,11 @@ export default function Header() {
   };
 
   return (
-    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+    <header className={`fixed w-full top-0 z-50 transition-all duration-300 overflow-x-hidden ${
       isScrolled ? "modern-header modern-shadow" : "modern-header"
     }`}>
-      <nav className="container-padding py-3 sm:py-4">
-        <div className="flex items-center justify-between">
+      <nav className="container-padding py-3 sm:py-4 w-full max-w-none overflow-x-hidden">
+        <div className="flex items-center justify-between w-full max-w-none overflow-x-hidden">
           {/* Logo */}
           <div className="flex items-center space-x-2 sm:space-x-3 hover-scale">
             <div className="flex items-center p-1">
@@ -52,7 +52,7 @@ export default function Header() {
 
           {/* Mobile Contact Button - Fixed in center */}
           {isMobile && (
-            <div className="absolute left-1/2 transform -translate-x-1/2">
+            <div className="absolute left-1/2 transform -translate-x-1/2 max-w-[120px]">
               <button
                 onClick={() => scrollToSection("contact")}
                 className="bg-gradient-to-r from-blue-600 to-blue-500 text-white px-4 py-2 rounded-lg font-semibold text-sm touch-manipulation hover:shadow-lg transition-all duration-300 flex items-center space-x-1"
