@@ -6,6 +6,23 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+// Force HTTPS in production and handle www redirects
+app.use((req, res, next) => {
+  const host = req.get('Host');
+  
+  // Handle www redirect
+  if (host && host.startsWith('www.')) {
+    return res.redirect(301, `https://${host.slice(4)}${req.url}`);
+  }
+  
+  // Force HTTPS in production
+  if (req.get('X-Forwarded-Proto') === 'http' && process.env.NODE_ENV === 'production') {
+    return res.redirect(301, `https://${host}${req.url}`);
+  }
+  
+  next();
+});
+
 app.use((req, res, next) => {
   const start = Date.now();
   const path = req.path;
